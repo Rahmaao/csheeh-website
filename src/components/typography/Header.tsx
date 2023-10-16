@@ -26,4 +26,4 @@ const Header= ({children}: {children: React.ReactNode}) => {
 export default Header
 
 
-const Root = styled.div(() => [tw`w-full border-none bg-yellow-200 text-red-400 text-sm text-[65px]`])
+const Root = styled.div(() => [tw`w-full border-none text-[65px]`])
