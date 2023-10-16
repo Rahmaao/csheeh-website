@@ -8,7 +8,6 @@ export default function Home() {
   return (
     <main className="mt-[24px] text-yellow-200">
       <Navbar />
-      <Header>My name is Femi</Header>
     </main>
   );
 }
