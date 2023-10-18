@@ -3,7 +3,8 @@ import Button from "@/components/Button";
 import Navbar from "@/components/Navbar";
 import Header from "@/components/typography/Header";
 import Image from "next/image";
-import ArrowRight from "../../public/images/Arrow - Right.svg";
+import tw, { styled } from "twin.macro";
+import HeartImage from "@/assets/icons/Heart.svg";
 
 export default function Home() {
   return (
@@ -20,7 +21,7 @@ export default function Home() {
         <div>
           <Button>
             Get Involved
-            <Image src={ArrowRight} alt="Heart" width={18} height={18} />
+            <Image src={HeartImage} alt="Heart" width={14} height={14} />
           </Button>
         </div>
       </div>

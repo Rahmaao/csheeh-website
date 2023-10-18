@@ -3,9 +3,6 @@
 import tw, { styled } from "twin.macro";
 import LogoImage from "../../../public/images/logo.png";
 import Image from "next/image";
-import { Open_Sans } from "next/font/google";
-
-const openSans = Open_Sans();
 
 const Index = () => {
   return (

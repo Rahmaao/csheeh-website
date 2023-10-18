@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
-
-const inter = Inter({ subsets: ["latin"] });
+import { nunitoFont } from "./fonts";
 
 export const metadata: Metadata = {
   title: "Center for School Health Education and Environment Hygiene",
@@ -16,9 +14,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className="font-[Inter] w-full">
-        <div className="min-h-[100vh] w-full">{children}</div>
+    <html lang="en" className={nunitoFont.className}>
+      <body className="w-full">
+        <div className="min-h-[100vh] w-full">
+          <Navbar />
+          {children}
+        </div>
       </body>
     </html>
   );
