@@ -1,15 +1,16 @@
 "use client";
 
 import tw, { styled } from "twin.macro";
-import LogoImage from "../../../public/images/logo.png";
+import LogoImage from "@/assets/images/logo.png";
 import Image from "next/image";
+import { openSansFont } from "@/app/fonts";
 
 const Index = () => {
   return (
     <Nav>
       <Logo>
         <Image src={LogoImage} alt="logo" width={71} height={78.65} />
-        <LogoText>
+        <LogoText className={openSansFont.className}>
           CENTRE FOR SCHOOL HEALTH EDUCATION AND ENVIRONMENTAL HYGIENE
         </LogoText>
       </Logo>

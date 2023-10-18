@@ -16,10 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={nunitoFont.className}>
       <body className="w-full">
-        <div className="min-h-[100vh] w-full">
-          <Navbar />
-          {children}
-        </div>
+        <div className="min-h-[100vh] w-full">{children}</div>
       </body>
     </html>
   );

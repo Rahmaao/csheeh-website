@@ -5,6 +5,7 @@ import Header from "@/components/typography/Header";
 import Image from "next/image";
 import tw, { styled } from "twin.macro";
 import HeartImage from "@/assets/icons/Heart.svg";
+import RightArrow from "@/assets/icons/Arrow - Right.svg";
 
 export default function Home() {
   return (
@@ -21,7 +22,7 @@ export default function Home() {
         <div>
           <Button>
             Get Involved
-            <Image src={HeartImage} alt="Heart" width={14} height={14} />
+            <Image src={RightArrow} alt="Right Arrow" width={18} height={18} />
           </Button>
         </div>
       </div>
