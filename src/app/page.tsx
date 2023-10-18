@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar/Navbar";
 import Header from "@/components/typography/Header";
 import Image from "next/image";
 import tw, { styled } from "twin.macro";
-import HeartImage from '../../public/images/Heart.svg'
+import HeartImage from "@/assets/icons/Heart.svg";
 
 export default function Home() {
   return (
@@ -21,7 +21,6 @@ export default function Home() {
           <Button>
             Get Involved
             <Image src={HeartImage} alt="Heart" width={14} height={14} />
-
           </Button>
         </div>
       </div>
