@@ -1,15 +1,15 @@
 "use client";
 import Button from "@/components/Button";
-import Navbar from "@/components/Navbar/Navbar";
+import Navbar from "@/components/Navbar";
 import Header from "@/components/typography/Header";
 import Image from "next/image";
-import tw, { styled } from "twin.macro";
-import HeartImage from '../../public/images/Heart.svg'
+import ArrowRight from "../../public/images/Arrow - Right.svg";
 
 export default function Home() {
   return (
     <main className="flex flex-col justify-center items-center h-full">
-      <div className="w-[782px] text-center text-black flex flex-col center items-center">
+      <Navbar />
+      <div className="w-[782px] text-center text-black flex flex-col center items-center gap-[43px]">
         <Header>
           <h1 className="text-[65px] leading-[68px]">
             Building <span className="text-[#A9CF46]">Healthy Schools, </span>
@@ -20,13 +20,10 @@ export default function Home() {
         <div>
           <Button>
             Get Involved
-            <Image src={HeartImage} alt="Heart" width={14} height={14} />
-
+            <Image src={ArrowRight} alt="Heart" width={18} height={18} />
           </Button>
         </div>
       </div>
     </main>
   );
 }
-
-const H2 = styled.h2(() => [tw`border border-[#ffff]`]);
