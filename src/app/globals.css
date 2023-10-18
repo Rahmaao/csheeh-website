@@ -1,3 +1,168 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+
+.card{
+    @apply bg-black rounded relative;
+    /* width: 50%; */
+    height: 100%;
+}
+
+.footer-div{
+    background-color: blue;
+    width: 100%;
+    height: 20em;
+}
+
+.main-footer{
+    background-color: bisque;
+    width: 100%;
+    height: 80%;
+}
+
+.copyright-section{
+    background-color: brown;
+    width: 100%;
+    height: 20%;
+}
+
+.footer-section1{
+    background-color: rebeccapurple;
+    /* width: 50%; */
+    height: 100%;
+
+}
+
+.footer-section2{
+    background-color: red;
+    /* width: 50%; */
+    height: 100%;
+
+}
+
+/* @media screen and (max-width: 600px) {
+    .main-footer{
+      flex-direction: column;
+    }
+
+    .footer-section1{
+        width: 100%;
+    }
+
+    .footer-section2{
+        width: 100%;
+    }
+  } */
+
+.footer-content1{
+
+    background-color: magenta;
+    width: 80%;
+    height: 100%;
+
+}
+
+.footer-component1{
+    background-color: aliceblue;
+    width: 50%;
+    height: 33%;
+}
+
+.footer-component2{
+    background-color: aqua;
+    width: 90%;
+    height: 25%;
+}
+
+.footer-component3{
+    background-color: violet;
+    width: 90%;
+    height: 10%;
+}
+
+.footer-component4{
+    background-color: tomato;
+    width: 90%;
+    height: 10%;
+}
+
+.footer-content2{
+    background-color: skyblue;
+    width: 80%;
+    height: 80%;
+}
+
+.footer-component5{
+    background-color: forestgreen;
+    width: 90%;
+    height: 20%;
+}
+
+.footer-component6{
+    background-color: tomato;
+    width: 10%;
+    height: 15%;
+}
+
+.logo-img{
+    background-color: seagreen;
+    width: 30%;
+    height: 85%;
+}
+
+.logo-name{
+    background-color: darkblue;
+    width: 70%;
+    height: 100%;
+}
+
+.icon-img{
+    background-color: royalblue;
+    width: 5%;
+    height: 100%;
+    padding-top: 2px;
+}
+
+.text-content{
+    background-color: turquoise;
+    width: 95%;
+    height: 100%;
+}
+
+.logo-img1{
+    background-color: steelblue;
+    width: 35%;
+    height: 100%;
+    
+
+}
+
+.footer-nav-items{
+    @apply text-sm flex justify-center items-center font-bold;
+    background-color: sienna;
+    /* width: 23%; */
+    height: 100%;
+}
+
+.img-icon{
+    width: 60%;
+    height: 13px;
+    background-color: aliceblue;
+}
+
+.icon-1{
+    @apply flex justify-center items-center;
+    width: 100%;
+    height: 100%;
+}
+
+
+ 
