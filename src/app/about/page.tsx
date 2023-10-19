@@ -1,5 +1,5 @@
 "use client";
-import Navbar from "@/components/Navbar/Navbar";
+import Index from "@/components/Navbar";
 import Image from "next/image";
 import tw, { styled } from "twin.macro";
 

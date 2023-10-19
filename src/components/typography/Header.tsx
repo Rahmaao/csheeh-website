@@ -1,29 +1,15 @@
-import React from 'react'
+import React from "react";
 import tw, { css, styled } from "twin.macro";
-import LocalFont from 'next/font/local'
-
-const RecoletaLocalFont = LocalFont({
-  src: [{
-    path: "./fonts/Recoleta-RegularDEMO.otf",
-    weight: "400",
-    style: "normal"
-  }]
-})
+import { recoletaLocalFont } from "@/app/fonts";
 
 interface HeaderProps {
-text: string
+  text: string;
 }
 
-const Header= ({children}: {children: React.ReactNode}) => {
-  return (
-    <Root className={RecoletaLocalFont.className}>
-      {children}
-    </Root>
-  )
-}
+const Header = ({ children }: { children: React.ReactNode }) => {
+  return <Root className={recoletaLocalFont.className}>{children}</Root>;
+};
 
+export default Header;
 
-export default Header
-
-
-const Root = styled.div(() => [tw`w-full border-none text-[65px]`])
+const Root = styled.div(() => [tw`w-full border-none text-[65px]`]);
