@@ -31,5 +31,5 @@ const LogoImage = styled.div(() => [
 ]);
 
 const LogoText = styled.div(() => [
-    tw`flex items-center text-xs font-bold`,
+    tw`flex items-center text-[10px] md:text-[10px] xl:text-xs font-bold`, css`footer-logo-text`,
   ]);

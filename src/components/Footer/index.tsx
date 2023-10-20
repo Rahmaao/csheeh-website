@@ -16,9 +16,9 @@ const index = () => {
   return (
     <Root className={nunitoFont.className}>
       <div className="main-footer grid md:grid-cols-2">
-        <div className="card footer-section1 flex justify-center">
+        <div className="card footer-section1 flex justify-center h-full">
           <div className="footer-content1 flex flex-col justify-evenly">
-          <div className="w-[50%] h-[33%]">
+          <div className="footer-logo w-[50%] h-[33%]">
             <Logo/>
             </div>            
             <div className="footer-component2 flex">
@@ -28,7 +28,7 @@ const index = () => {
                 </div>
               </div>
               <div className="text-content">
-                <p className="text2 text-xs">
+                <p className="text2 text-[8px] md:text-[10px] lg:text-xs">
                   Centre for School Health Education and Environmental Hygiene
                   (CSHEEH) <br />
                   Sentosa Park, Near Fire Service, Zone A 1st Gate, Legislative
@@ -43,7 +43,7 @@ const index = () => {
                 </div>
               </div>
               <div className="text-content">
-                <p className="text3 text-xs">info@csheehnigeria.org</p>
+                <p className="text3 text-[8px] md:text-[10px] lg:text-xs">info@csheehnigeria.org</p>
               </div>
             </div>
             <div className="footer-component4 flex">
@@ -53,15 +53,15 @@ const index = () => {
                 </div>
               </div>
               <div className="text-content">
-                <p className="text3 text-xs">
+                <p className="text3 text-[8px] md:text-[10px] lg:text-xs">
                   +234 803 787 1487; +234 805 356 3370
                 </p>
               </div>
             </div>
           </div>
         </div>
-        <div className="card footer-section2 flex justify-center items-center">
-          <div className="footer-content2 flex flex-col items-end justify-between">
+        <div className="card footer-section2 flex justify-center items-center md:h-full">
+          <div className="footer-content2 flex flex-col items-center md:items-end justify-around md:justify-between">
             <div className="footer-component5 flex justify-between">
               <div className="footer-nav-items">
                 <a href="">ABOUT US</a>
@@ -90,7 +90,7 @@ const index = () => {
 
       <Copyright className={nunitoFont.className}>
         <hr className="h-[0.2px] w-[95%] mx-auto mt-3 border-0 bg-[#a3a3a343]" />
-        <p className="text-[10px] font-thin tracking-wide">Copyright © CSHEEH 2023. All rights reserved.</p>
+        <p className="text-[7px] md:text-[10px] font-thin tracking-wide">Copyright © CSHEEH 2023. All rights reserved.</p>
       </Copyright>
     </Root>
   );

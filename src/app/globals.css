@@ -16,47 +16,12 @@
     height: 100%;
 }
 
-.footer-div{
-    /* background-color: blue; */
-    width: 100%;
-    height: 20em;
-} 
 
 .main-footer{
     /* background-color: bisque; */
     width: 100%;
     height: 80%;
 }
-
-
-
-.footer-section1{
-    /* background-color: rebeccapurple; */
-    /* width: 50%; */
-    height: 100%;
-
-}
-
-.footer-section2{
-    /* background-color: red; */
-    /* width: 50%; */
-    height: 100%;
-
-}
-
-/* @media screen and (max-width: 600px) {
-    .main-footer{
-      flex-direction: column;
-    }
-
-    .footer-section1{
-        width: 100%;
-    }
-
-    .footer-section2{
-        width: 100%;
-    }
-  } */
 
 .footer-content1{
 
@@ -78,7 +43,7 @@
 
 .footer-component2{
     /* background-color: aqua; */
-    width: 90%;
+    width: 100%;
     height: 25%;
 }
 
@@ -146,12 +111,11 @@
 }
 
 .footer-nav-items{
-    @apply flex justify-center items-center;
+    @apply flex justify-center items-center text-[8px] lg:text-[12px];
     /* background-color: sienna; */
     /* width: 23%; */
     height: 100%;
     letter-spacing: 1px;
-    font-size: 12px;
     font-weight: 600;
     color: #FFFFFF;
 }
@@ -170,3 +134,59 @@
 
 
  
+@media screen and (max-width: 400px) {
+
+
+    .footer-content1{
+        /* background-color: tomato; */
+        width: 90%;
+    }
+
+    .footer-logo{
+        /* background-color: aqua; */
+        margin-top: 8px;
+        margin-bottom: 15px;
+        width: 70%;
+    }
+
+    .footer-component2{
+        /* background-color: aqua; */
+        width: 100%;
+        /* font-size: 2px; */
+    }
+    .footer-content2{
+        /* background-color: wheat; */
+        padding-top: 15px;
+    }
+
+    .footer-component6{
+        /* background-color: tomato; */
+        width: 20%;
+        height: 35%;
+    }
+
+    .icon-img{
+        /* background-color: yellow; */
+        padding-top: 0px;
+    }
+    
+  }
+
+  @media screen and (min-width: 760px) and (max-width: 1000px){
+
+  
+
+    .footer-content1{
+        width: 95%;
+    }
+
+    .footer-logo{ 
+        width: 70%;
+    }
+
+    .text2{
+        width: 100%;
+    }
+
+
+  }
