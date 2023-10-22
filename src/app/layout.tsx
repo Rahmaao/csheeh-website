@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { nunitoFont } from "./fonts";
 
+
 export const metadata: Metadata = {
   title: "Center for School Health Education and Environment Hygiene",
   description: "The official CSHEEH Website",
