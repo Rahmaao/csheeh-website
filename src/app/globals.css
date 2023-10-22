@@ -190,3 +190,25 @@
 
 
   }
+
+
+
+  /* GET INVOLVED */
+
+
+  .get-involved-text2{
+    line-height: 25px;
+    /* word-spacing: 2px; */
+  }
+
+  @media screen and (min-width: 760px) and (max-width: 900px){
+
+    .get-involved-text2{
+        line-height: 15px;
+        /* word-spacing: 2px; */
+      }
+
+
+  }
+
+ 

@@ -19,7 +19,7 @@ export default function RootLayout({
     <html lang="en" className={nunitoFont.className}>
       <body className="w-full">
         <div className="min-h-[100vh] w-full">{children}</div>
-        <Footer/>
+        {/* <Footer/> */}
       </body>
     </html>
   );
