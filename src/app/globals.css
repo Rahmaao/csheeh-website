@@ -201,6 +201,11 @@
     /* word-spacing: 2px; */
   }
 
+  .get-involved-mail{
+    text-decoration: 1px underline;
+    color: #058A51;
+  }
+
   @media screen and (min-width: 760px) and (max-width: 900px){
 
     .get-involved-text2{
@@ -210,5 +215,38 @@
 
 
   }
+
+
+  @media screen and (min-width: 381px) and (max-width: 500px) {
+
+    .get-involved-text{
+        order: 1;
+
+    }
+
+    .get-involved-section{
+        height: 75vh;
+    }
+    
+  
+}
+
+@media screen and (max-width: 500px) {
+
+    .get-involved-text{
+        order: 1;
+
+    }
+
+    .get-involved-section{
+        height: 65vh;
+    }
+
+    
+    
+  
+}
+  
+  
 
  
