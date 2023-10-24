@@ -13,3 +13,21 @@ export const recoletaLocalFont = LocalFont({
     },
   ],
 });
+export const recoletasemiboldLocalFont = LocalFont({
+  src: [
+    {
+      path: "../assets/fonts/RecoletaAlt-SemiBold.ttf",
+      weight: "500",
+      style: "semibold",
+    },
+  ],
+});
+export const recoletaboldLocalFont = LocalFont({
+  src: [
+    {
+      path: "../assets/fonts/RecoletaAlt-Bold.ttf",
+      weight: "500",
+      style: "bold",
+    },
+  ],
+});

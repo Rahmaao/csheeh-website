@@ -9,6 +9,8 @@ import Partners from "@/assets/images/Partners.png";
 import Heart from "@/assets/icons/Heart.svg"
 import Image from "next/image";
 import { recoletaLocalFont } from "@/app/fonts";
+import { recoletaboldLocalFont } from "@/app/fonts";
+import { recoletasemiboldLocalFont } from "@/app/fonts";
 
 
 const index = () => {
@@ -19,7 +21,7 @@ const index = () => {
       <Card>
         <div className="get-involved-text flex flex-col md:justify-between md:items-start items-center w-[100%] h-[60%] md:w-[60%] md:h-[90%] lg:h-[75%]">
           <div className="get-involved-text1 w-[70%] md:w-[50%] h-[12%] md:h-[20%] flex items-center md:items-end md:justify-start justify-center">
-            <GetInvolvedText1 className={recoletaLocalFont.className}>Make a donation</GetInvolvedText1>
+            <GetInvolvedText1 className={recoletaboldLocalFont.className}>Make a donation</GetInvolvedText1>
           </div>
           <div className="get-involved-text2 pt-3 md:pt-0 text-[11px] lg:text-[15px] w-full md:w-[80%] h-fit md:h-fit md:text-left text-center">
             <p>Every donation, no matter the size, plays a crucial role in helping us achieve these goals. With your support, we can provide children with healthier and more inspiring places to learn, ensure the safety of our communities, and empower individuals to thrive. By contributing to our cause, you're not just donating; you're investing in a brighter future. Join us in this meaningful journey of transformation, and together, we can build a healthier, safer, and more vibrant world for all.</p>
@@ -52,7 +54,7 @@ const index = () => {
         </div>
         <div className="get-involved-text flex flex-col md:justify-evenly md:items-start items-center w-[100%] h-[45%] md:w-[50%] md:h-[80%]">
           <div className="get-involved-text1 w-[70%] md:w-[50%] h-[36.75px] md:h-[20%] flex items-center md:items-end md:justify-start justify-center">
-            <GetInvolvedText1 className={recoletaLocalFont.className}>Volunteer with us</GetInvolvedText1>
+            <GetInvolvedText1 className={recoletaboldLocalFont.className}>Volunteer with us</GetInvolvedText1>
           </div>
           <div className="get-involved-text2 pt-3 md:pt-0 text-[11px] lg:text-[15px] w-full md:w-[100%] h-fit md:h-fit md:text-left text-center">
           <p>Are you interested in volunteering with CSHEEH? You can forward an application to our email address <span className="get-involved-mail">volunteer@csheehnigeria.org</span> or fill our volunteer application form using the button below. We look forward to hearing from you.</p>
@@ -73,7 +75,7 @@ const index = () => {
       <Card>
         <div className="get-involved-text flex flex-col md:justify-evenly md:items-start items-center w-[100%] h-[60%] md:w-[60%] md:h-[90%]">
           <div className="get-involved-text1 w-[85%] md:w-[70%] h-[12%] md:h-[20%] flex items-center md:items-end md:justify-start justify-center">
-            <GetInvolvedText1 className={recoletaLocalFont.className}>Become one of our partners</GetInvolvedText1>
+            <GetInvolvedText1 className={recoletaboldLocalFont.className}>Become one of our partners</GetInvolvedText1>
           </div>
           <div className="get-involved-text2 pt-3 md:pt-0 text-[11px] lg:text-[15px] w-full md:w-[87%] h-fit md:h-fit md:text-left text-center">
           <p>Individuals and organizations that desire to partner with CSHEEH may forward their proposals to our official email address <span className="get-involved-mail">info@csheehnigeria.org</span> or fill our contact form. We also welcome donations and grants from individuals and organizations. All donations are channeled strictly towards the realization of the organization’s objectives and account will be given where necessary.</p>
@@ -118,7 +120,7 @@ const GetInvolvedSection = styled.div(() => [
 ]);
 
 const GetInvolvedText1 = styled.div(() => [
-  tw`text-[18px] md:text-[18px] lg:text-[25px] font-[1000] tracking-wide`,
+  tw`text-[18px] md:text-[18px] lg:text-[27px] font-[1000] tracking-wide`,
   css``,
 ]);
 
