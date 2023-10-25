@@ -15,7 +15,10 @@ const CardItem = ({
 }) => {
   return (
     <Root>
-      <Image src={headerImage} height={60} width={60} alt="card-item-image" />
+      <ImageContainer>
+        <Image src={headerImage} height={60} width={60} alt="card-item-image" />
+      </ImageContainer>
+
       <Header className={recoletaLocalFont.className}>{headerText}</Header>
       <Text className={nunitoFont.className}>{content} </Text>
     </Root>
@@ -24,9 +27,11 @@ const CardItem = ({
 
 const Root = styled.div(() => [
   tw`
-    flex flex-col items-start w-[358px] gap-[16px] bg-amber-100
+    flex flex-col items-start w-full gap-[16px] h-full place-items-center
 `,
 ]);
+
+const ImageContainer = styled.div(() => tw`h-[71px]`);
 
 const Header = styled.h3(() => [
   tw`font-[18px] text-black leading-[24.48px] font-semibold`,

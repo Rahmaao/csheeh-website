@@ -6,6 +6,7 @@ import HornIcon from "@/assets/icons/horn.svg";
 import MedicalIcon from "@/assets/icons/medical-outrages.svg";
 import PromotingIcon from "@/assets/icons/promoting.svg";
 import ReserachIcon from "@/assets/icons/research.svg";
+import GetInvolvedImg from "@/assets/images/get-involved.png";
 import HeroBg from "@/assets/images/hero-bg.png";
 import WhatWeDoImage from "@/assets/images/what-we-do.png";
 import Button from "@/components/Button";
@@ -14,11 +15,13 @@ import GridItem from "@/components/GridItem";
 import Header from "@/components/typography/Header";
 import Image from "next/image";
 import tw, { styled } from "twin.macro";
-import { recoletaLocalFont } from "./fonts";
+import { recoletaLocalFont, openSansFont, nunitoFont } from "./fonts";
+import Link from "next/link";
+import SectionTag from "@/components/SectionTag";
 
 export default function Home() {
   return (
-    <main className="flex flex-col justify-center items-center">
+    <Root>
       <Hero
         style={{
           backgroundImage: `url(${HeroBg.src})`,
@@ -28,11 +31,11 @@ export default function Home() {
       >
         <HeroContent>
           <Header>
-            <h1 className="text-[45px] lg:text-[65px] leading-[60px] lg:leading-[68px] text-white">
+            <HeroHeader>
               Building <span className="text-[#A9CF46]">Healthy Schools, </span>
               <span className="text-[#058A51]">Safe Environments</span> and
               <span className="text-[#FFD14F]"> Stronger Communities</span>
-            </h1>
+            </HeroHeader>
           </Header>
 
           <Button>
@@ -87,14 +90,13 @@ export default function Home() {
               </svg>
             </TransparentButton>
           </WhatWeDoContent>
-          <WhatWeDoImageContainer
-            style={{
-              backgroundImage: `url(${WhatWeDoImage.src})`,
-              backgroundRepeat: "no-repeat",
-              backgroundSize: "contain",
-              backgroundPosition: "center",
-            }}
-          />
+          <WhatWeDoImageContainer>
+            <Image
+              src={WhatWeDoImage}
+              alt="what-we-do-image"
+              objectFit="contain"
+            />
+          </WhatWeDoImageContainer>
         </WhatWeDo>
         <Grid>
           <GridItem
@@ -132,11 +134,52 @@ export default function Home() {
             content="We conduct research to identify health and safety issues in schools, gathering valuable data. This information not only informs our actions but also serves as a resource for educators, policymakers, and the community. It empowers stakeholders to make evidence-based decisions, ultimately improving the health and safety of schools and their surroundings."
           />
         </Grid>
+        <GetInvolved>
+          <GetInvolvedContent>
+            <SectionTag tag="Get Involved" color="white" />
+            <GetInvolvedContentHeader className={recoletaLocalFont.className}>
+              Be a part of our journey towards a better future.
+            </GetInvolvedContentHeader>
+            <GetInvolvedContentBody className={nunitoFont.className}>
+              By joining hands with us, you become an essential part of the
+              effort to create healthier, safer, and more hygienic environments
+              for students and communities. Together, we can make a lasting
+              impact and transform the lives of countless individuals.
+            </GetInvolvedContentBody>
+            <GetInvolvedLinks>
+              {getInvolvedLinkData.map((link) => (
+                <GetInvolvedLink>
+                  <Link href={link.to}>{link.text}</Link>
+                </GetInvolvedLink>
+              ))}
+            </GetInvolvedLinks>
+          </GetInvolvedContent>
+          <GetInvolvedImageContainer>
+            <Image
+              src={GetInvolvedImg}
+              objectFit="contain"
+              alt="get-involved-image"
+            />
+          </GetInvolvedImageContainer>
+        </GetInvolved>
+        <LatestArticles>
+          <SectionTag tag="Latest Articles" color="#058A51" />
+        </LatestArticles>
+        <Donation>
+          <DonationContent className="bg-black">
+            <DonationContentHeader className={recoletaLocalFont.className}>
+              Every contribution counts and helps us sustain our initiatives.
+            </DonationContentHeader>
+          </DonationContent>
+        </Donation>
       </MainContent>
-    </main>
+    </Root>
   );
 }
 
+const Root = styled.main(() => [
+  tw`flex flex-col justify-center items-center gap-[80px] lg:gap-[10px]`,
+]);
 const Hero = styled.div(() => [
   tw`text-center flex items-center justify-center min-h-[100vh] w-full `,
 ]);
@@ -145,20 +188,24 @@ const HeroContent = styled.div(() => [
   tw`w-[782px] flex flex-col justify-center items-center lg:gap-[43px] gap-[35px]`,
 ]);
 
+const HeroHeader = styled.h1(() => [
+  tw`w-full border-none text-[45px] lg:text-[65px] leading-[60px] lg:leading-[68px] text-white`,
+]);
+
 const MainContent = styled.div(() => [
-  tw`w-full px-[40px] lg:px-[80px] pt-[10px] lg:pt-[80px] flex flex-col items-center content-center gap-[180px] lg:gap-[100px]`,
+  tw`w-full  pt-[10px] lg:pt-[80px] flex flex-col items-center content-center`,
 ]);
 
 const WhatWeDo = styled.div(() => [
-  tw`w-full lg:h-[395px] flex flex-col lg:flex-row gap-[29px] lg:gap-[99px] lg:items-center pt-[80px] lg:pt-[10px]`,
+  tw`w-full px-[40px] lg:px-[80px] flex flex-col lg:flex-row lg:items-center items-center lg:justify-between sm:justify-center gap-[40px] lg:gap-[0px]`,
 ]);
 
 const WhatWeDoContent = styled.div(() => [
-  tw`h-auto flex flex-col gap-[10px] text-center items-center lg:items-start content-center lg:w-[631px]`,
+  tw`h-auto flex flex-col gap-[10px] text-center items-center lg:items-start content-center w-[300px] sm:w-[500px] md:w-[600px] lg:w-[631px]`,
 ]);
 
 const WhatWeDoHeader = styled.div(() => [
-  tw`w-full border-none text-[35px] lg:leading-[48px] [letter-spacing: 0.02em] font-extrabold lg:text-left`,
+  tw`w-full border-none text-[30px] lg:text-[35px] lg:leading-[48px] [letter-spacing: 0.02em] font-extrabold lg:text-left`,
 ]);
 
 const WhatWeDoText = styled.div(() => [
@@ -166,9 +213,64 @@ const WhatWeDoText = styled.div(() => [
 ]);
 
 const WhatWeDoImageContainer = styled.div(() => [
-  tw`h-[395px] w-full lg:w-[559px]`,
+  tw`h-[250px] w-[300px] sm:h-[450px] sm:w-[500px]  md:h-[650px] md:w-[700px] flex justify-center items-center`,
 ]);
 
 const Grid = styled.div(() => [
-  tw`w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center gap-y-[70px] bg-red-300`,
+  tw`w-full sm:w-3/4 lg:w-full px-[50px] lg:px-[80px] grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 items-center sm:bg-teal-300 justify-center gap-[40px] lg:gap-x-[60.5px] lg:gap-y-[70px] pt-[40px] py-[97px] lg:pb-[171px]`,
+]);
+
+const GetInvolved = styled.div(() => [
+  tw`w-full bg-dark-blue flex flex-col lg:flex-row gap-[80px] text-white px-[40px] lg:px-[80px] justify-center items-center lg:justify-between py-[100px]`,
+]);
+
+const GetInvolvedContent = styled.div(() => [
+  tw` lg:w-[650px] flex-col w-full sm:w-[400px]`,
+]);
+
+const GetInvolvedContentHeader = styled.h2(() => [
+  tw` text-[30px] lg:text-[35px] pt-[11px] leading-[42.03px] text-left`,
+]);
+
+const GetInvolvedContentBody = styled.p(() => [
+  tw`text-[15px] lg:text-[18px] font-[400] leading-[25px] lg:leading-[30px] pt-[12px]`,
+]);
+
+const GetInvolvedLinks = styled.ul(() => [
+  tw`list-disc mt-[20px] lg:mt-[30px] pl-[18px] lg:pl-3 flex flex-col gap-[11px] lg:gap-[21px] `,
+]);
+
+const getInvolvedLinkData = [
+  {
+    text: "Donate to support our projects",
+    to: "/contact",
+  },
+  {
+    text: "Volunteer with us",
+    to: "/volunteer",
+  },
+  {
+    text: "Join us as a corporate partner",
+    to: "/join",
+  },
+];
+
+const GetInvolvedLink = styled.li(() => [tw`hover:text-dark-blue`]);
+
+const GetInvolvedImageContainer = styled.div(() => [
+  tw`w-fit h-[300px] sm:w-[300px] self-center lg:w-[500px] lg:h-auto`,
+]);
+
+const LatestArticles = styled.div(() => [
+  tw`w-full bg-lime px-[40px] lg:px-[80px] h-[100px] py-[100px]`,
+]);
+
+const Donation = styled.div(() => [
+  tw`w-full px-[40px] lg:px-[80px] py-[100px] h-[664px] `,
+]);
+
+const DonationContent = styled.div(() => [tw`w-full flex flex-col`]);
+
+const DonationContentHeader = styled.h2(() => [
+  tw` text-[35px] lg:text-[45px] text-white leading-[50px] font-[600]`,
 ]);
