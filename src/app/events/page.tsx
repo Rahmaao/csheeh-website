@@ -1,11 +1,22 @@
-import React from 'react'
+"use client";
+
+import PageHero from "@/components/PageHero";
+import React from "react";
+import tw, { styled } from "twin.macro";
+import ContactUsImg from "@/assets/images/contact-us.png";
 
 const Events = () => {
   return (
-    <div>
-      <h1>Events</h1>
-    </div>
-  )
-}
+    <Root>
+      <PageHero
+        header="Events"
+        subHeader="Want to partner with us or make inquiries, feel free to reach out to us with any questions or inquiries."
+        image={ContactUsImg}
+      />
+    </Root>
+  );
+};
 
-export default Events
+const Root = styled.div(() => [tw``]);
+
+export default Events;

@@ -78,17 +78,15 @@ export default function Home() {
               >
                 <path
                   d="M14.8125 9.29431H3.5625"
-                  // stroke="#058A51"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
                 <path
                   d="M10.2751 4.77599L14.8126 9.29399L10.2751 13.8127"
-                  // stroke="#058A51"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
               </svg>
             </TransparentButton>
@@ -153,7 +151,7 @@ export default function Home() {
             </GetInvolvedContentBody>
             <GetInvolvedLinks>
               {getInvolvedLinkData.map((link) => (
-                <GetInvolvedLink>
+                <GetInvolvedLink key={link.id}>
                   <Link href={link.to}>{link.text}</Link>
                 </GetInvolvedLink>
               ))}
@@ -265,14 +263,17 @@ const GetInvolvedLinks = styled.ul(() => [
 
 const getInvolvedLinkData = [
   {
+    id: 0,
     text: "Donate to support our projects",
     to: "/contact",
   },
   {
+    id: 1,
     text: "Volunteer with us",
     to: "/volunteer",
   },
   {
+    id: 2,
     text: "Join us as a corporate partner",
     to: "/join",
   },
