@@ -97,7 +97,9 @@ export default function Home() {
             <Image
               src={WhatWeDoImage}
               alt="what-we-do-image"
-              objectFit="contain"
+              style={{
+                objectFit: "contain",
+              }}
             />
           </WhatWeDoImageContainer>
         </WhatWeDo>
@@ -160,7 +162,9 @@ export default function Home() {
           <GetInvolvedImageContainer>
             <Image
               src={GetInvolvedImg}
-              objectFit="contain"
+              style={{
+                objectFit: "contain",
+              }}
               alt="get-involved-image"
             />
           </GetInvolvedImageContainer>
