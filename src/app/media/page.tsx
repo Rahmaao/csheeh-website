@@ -13,10 +13,12 @@ const Media = () => {
         subHeader="View and read more of our work in some of our featured news articles."
         image={MediaImg}
       />
+ <MediaCards/>
     </Root>
   );
 };
 
 const Root = styled.div(() => [tw``]);
+
 
 export default Media;
