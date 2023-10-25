@@ -8,9 +8,10 @@ interface ISectionTagProps {
 }
 
 const index = ({ tag, color }: ISectionTagProps) => {
+  const bgColor = `bg-[${color}]`;
   return (
     <Root className={`${openSansFont.className} text-[${color}]`}>
-      <TagLine className={`bg-[${color}]`} />
+      <TagLine className={bgColor} />
       {tag}
     </Root>
   );
@@ -19,6 +20,6 @@ const index = ({ tag, color }: ISectionTagProps) => {
 const Root = styled.div(() => [
   tw`flex gap-[20px] items-center uppercase text-center`,
 ]);
-const TagLine = styled.div(() => [tw`h-[1px] w-[40px]`]);
+const TagLine = styled.div(() => [tw`h-[2px] w-[40px]`]);
 
 export default index;
