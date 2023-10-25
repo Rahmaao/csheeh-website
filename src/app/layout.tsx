@@ -20,7 +20,7 @@ export default function RootLayout({
       <body className="w-full">
         {/* <LayoutHeader /> */}
         <div className="min-h-[100vh] w-full">{children}</div>
-        <Footer />
+        {/* <Footer/> */}
       </body>
     </html>
   );
