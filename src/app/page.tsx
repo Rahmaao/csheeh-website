@@ -3,10 +3,12 @@ import AdvocacyIcon from "@/assets/icons/advocacy.svg";
 import BlackArrowRight from "@/assets/icons/black-arrow-right.svg";
 import CapacityIcon from "@/assets/icons/building.svg";
 import HornIcon from "@/assets/icons/horn.svg";
+import HeartIcon from "@/assets/icons/Heart.svg";
 import MedicalIcon from "@/assets/icons/medical-outrages.svg";
 import PromotingIcon from "@/assets/icons/promoting.svg";
 import ReserachIcon from "@/assets/icons/research.svg";
 import GetInvolvedImg from "@/assets/images/get-involved.png";
+import DonateImg from "@/assets/images/donate.png";
 import HeroBg from "@/assets/images/hero-bg.png";
 import WhatWeDoImage from "@/assets/images/what-we-do.png";
 import Button from "@/components/Button";
@@ -18,6 +20,7 @@ import tw, { styled } from "twin.macro";
 import { recoletaLocalFont, openSansFont, nunitoFont } from "./fonts";
 import Link from "next/link";
 import SectionTag from "@/components/SectionTag";
+import ButtonImage from "@/components/Button/ButtonImage";
 
 export default function Home() {
   return (
@@ -165,11 +168,27 @@ export default function Home() {
         <LatestArticles>
           <SectionTag tag="Latest Articles" color="#058A51" />
         </LatestArticles>
-        <Donation>
-          <DonationContent className="bg-black">
+        <Donation
+          style={{
+            backgroundImage: `url(${DonateImg.src})`,
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+          }}
+        >
+          <DonationContent>
             <DonationContentHeader className={recoletaLocalFont.className}>
               Every contribution counts and helps us sustain our initiatives.
             </DonationContentHeader>
+            <DonationContentBody className={nunitoFont.className}>
+              Become a vital part of a movement dedicated to the well-being of
+              students and communities. Together, we can build a world where
+              every child thrives in a safe and nurturing environment, promoting
+              health, safety, and education for all.
+            </DonationContentBody>
+            <Button>
+              <ButtonImage src={HeartIcon} alt="heart-icon" />
+              Donate Now
+            </Button>
           </DonationContent>
         </Donation>
       </MainContent>
@@ -189,7 +208,7 @@ const HeroContent = styled.div(() => [
 ]);
 
 const HeroHeader = styled.h1(() => [
-  tw`w-full border-none text-[45px] lg:text-[65px] leading-[60px] lg:leading-[68px] text-white`,
+  tw`w-full border-none text-[40px] lg:text-[65px] leading-[50px] lg:leading-[68px] text-white`,
 ]);
 
 const MainContent = styled.div(() => [
@@ -217,7 +236,7 @@ const WhatWeDoImageContainer = styled.div(() => [
 ]);
 
 const Grid = styled.div(() => [
-  tw`w-full sm:w-3/4 lg:w-full px-[50px] lg:px-[80px] grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 items-center sm:bg-teal-300 justify-center gap-[40px] lg:gap-x-[60.5px] lg:gap-y-[70px] pt-[40px] py-[97px] lg:pb-[171px]`,
+  tw`w-full sm:w-3/4 lg:w-full px-[50px] lg:px-[80px] grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 items-center justify-center gap-[40px] lg:gap-x-[60.5px] lg:gap-y-[70px] pt-[40px] py-[97px] lg:pb-[171px]`,
 ]);
 
 const GetInvolved = styled.div(() => [
@@ -266,11 +285,15 @@ const LatestArticles = styled.div(() => [
 ]);
 
 const Donation = styled.div(() => [
-  tw`w-full px-[40px] lg:px-[80px] py-[100px] h-[664px] `,
+  tw`w-full px-[40px] lg:px-[80px] py-[175px] `,
 ]);
 
-const DonationContent = styled.div(() => [tw`w-full flex flex-col`]);
+const DonationContent = styled.div(() => [tw`w-full flex flex-col text-white`]);
 
 const DonationContentHeader = styled.h2(() => [
-  tw` text-[35px] lg:text-[45px] text-white leading-[50px] font-[600]`,
+  tw` text-[25px] md:text-[30px] lg:text-[45px] leading-[30px] font-[600] w-full sm:w-[300px] md:w-[350px] lg:w-[650px] lg:leading-[50px] mb-[19px] `,
+]);
+
+const DonationContentBody = styled.p(() => [
+  tw`w-full sm:w-[300px] md:w-[350px] lg:w-[650px] mb-[35px]`,
 ]);
