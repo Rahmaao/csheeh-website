@@ -9,7 +9,11 @@ const index = () => {
   return (
     <Root>
       <LogoImage>
-        <Image src={logo} alt="logo" className="flex justify-center items-center"/>
+        <Image
+          src={logo}
+          alt="logo"
+          className="flex justify-center items-center"
+        />
       </LogoImage>
       <LogoText>
         <p className={openSansFont.className}>
@@ -22,14 +26,12 @@ const index = () => {
 
 export default index;
 
-const Root = styled.div(() => [
-  tw`flex items-center w-full h-full gap-3`,
-]);
+const Root = styled.div(() => [tw`flex items-center w-full h-full gap-3`]);
 
 const LogoImage = styled.div(() => [
   tw`w-[40%] h-[85%] flex justify-center items-center`,
 ]);
 
 const LogoText = styled.div(() => [
-    tw`flex items-center text-[10px] md:text-[10px] xl:text-xs font-bold`, css`footer-logo-text`,
-  ]);
+  tw`flex items-center text-[10px] md:text-[10px] xl:text-xs font-bold`,
+]);

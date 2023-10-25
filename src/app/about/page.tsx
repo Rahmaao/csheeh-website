@@ -1,13 +1,18 @@
 "use client";
-import Index from "@/components/Navbar";
-import Image from "next/image";
+import AboutUsImg from "@/assets/images/about-us.png";
+import PageHero from "@/components/PageHero";
 import tw, { styled } from "twin.macro";
 
 export default function Home() {
   return (
-    <div>
-      <h2 className="bg-yellow-50">About Page</h2>
-      </div>
+    <Root>
+      <PageHero
+        header="About Us"
+        subHeader="Learn more about our mission and values, and meet the people that drive us forward."
+        image={AboutUsImg}
+      />
+    </Root>
   );
 }
 
+const Root = styled.div(() => [tw``]);
