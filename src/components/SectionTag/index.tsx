@@ -1,6 +1,6 @@
 import React from "react";
 import { openSansFont } from "@/app/fonts";
-import tw, { styled } from "twin.macro";
+import tw, { TwStyle, css, styled } from "twin.macro";
 
 interface ISectionTagProps {
   tag: string;
@@ -8,18 +8,30 @@ interface ISectionTagProps {
 }
 
 const index = ({ tag, color }: ISectionTagProps) => {
-  const bgColor = `bg-[${color}]`;
   return (
-    <Root className={`${openSansFont.className} text-[${color}]`}>
-      <TagLine className={bgColor} />
+    <Root
+      $color={color}
+      className={`${openSansFont.className} text-[${color}] tag__header`}
+    >
+      <TagLine $color={color} />
       {tag}
     </Root>
   );
 };
 
-const Root = styled.div(() => [
+const Root = styled.div<{ $color: string }>(({ $color }) => [
   tw`flex gap-[20px] items-center uppercase text-center`,
+
+  css`
+    color: ${$color};
+  `,
 ]);
-const TagLine = styled.div(() => [tw`h-[2px] w-[40px]`]);
+
+const TagLine = styled.div<{ $color: string }>(({ $color }) => [
+  tw`h-[1px] w-[40px]`,
+  css`
+    background-color: ${$color};
+  `,
+]);
 
 export default index;
