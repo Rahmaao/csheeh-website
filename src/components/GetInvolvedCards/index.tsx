@@ -1,4 +1,5 @@
 "use client";
+
 import React from "react";
 import tw, { styled, css } from "twin.macro";
 import SmallButton from "../SmallButton";
@@ -9,6 +10,8 @@ import Partners from "@/assets/images/Partners.png";
 import Heart from "@/assets/icons/Heart.svg";
 import Image from "next/image";
 import { recoletaLocalFont } from "@/app/fonts";
+import { recoletaboldLocalFont } from "@/app/fonts";
+import { recoletasemiboldLocalFont } from "@/app/fonts";
 
 const index = () => {
   return (
@@ -17,7 +20,7 @@ const index = () => {
         <Card>
           <div className="get-involved-text flex flex-col md:justify-between md:items-start items-center w-[100%] h-[60%] md:w-[60%] md:h-[90%] lg:h-[75%]">
             <div className="get-involved-text1 w-[70%] md:w-[50%] h-[12%] md:h-[20%] flex items-center md:items-end md:justify-start justify-center">
-              <GetInvolvedText1 className={recoletaLocalFont.className}>
+              <GetInvolvedText1 className={recoletaboldLocalFont.className}>
                 Make a donation
               </GetInvolvedText1>
             </div>
@@ -64,7 +67,7 @@ const index = () => {
           </div>
           <div className="get-involved-text flex flex-col md:justify-evenly md:items-start items-center w-[100%] h-[45%] md:w-[50%] md:h-[80%]">
             <div className="get-involved-text1 w-[70%] md:w-[50%] h-[36.75px] md:h-[20%] flex items-center md:items-end md:justify-start justify-center">
-              <GetInvolvedText1 className={recoletaLocalFont.className}>
+              <GetInvolvedText1 className={recoletaboldLocalFont.className}>
                 Volunteer with us
               </GetInvolvedText1>
             </div>
@@ -89,7 +92,7 @@ const index = () => {
         <Card>
           <div className="get-involved-text flex flex-col md:justify-evenly md:items-start items-center w-[100%] h-[60%] md:w-[60%] md:h-[90%]">
             <div className="get-involved-text1 w-[85%] md:w-[70%] h-[12%] md:h-[20%] flex items-center md:items-end md:justify-start justify-center">
-              <GetInvolvedText1 className={recoletaLocalFont.className}>
+              <GetInvolvedText1 className={recoletaboldLocalFont.className}>
                 Become one of our partners
               </GetInvolvedText1>
             </div>
@@ -140,7 +143,7 @@ const GetInvolvedSection = styled.div(() => [
 ]);
 
 const GetInvolvedText1 = styled.div(() => [
-  tw`text-[18px] md:text-[18px] lg:text-[25px] font-[1000] tracking-wide`,
+  tw`text-[18px] md:text-[18px] lg:text-[27px] font-[1000] tracking-wide`,
   css``,
 ]);
 
