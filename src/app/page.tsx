@@ -14,7 +14,7 @@ import WhatWeDoImage from "@/assets/images/what-we-do.png";
 import Button from "@/components/Button";
 import TransparentButton from "@/components/Button/Transparent";
 import GridItem from "@/components/GridItem";
-import Header from "@/components/typography/Header";
+import Header from "@/components/Typography/Header";
 import Image from "next/image";
 import tw, { styled } from "twin.macro";
 import { recoletaLocalFont, openSansFont, nunitoFont } from "./fonts";
