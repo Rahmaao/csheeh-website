@@ -14,6 +14,7 @@ import Text from "@/components/Typography/Text";
 import Image from "next/image";
 import tw, { styled } from "twin.macro";
 import { nunitoFont, recoletaLocalFont } from "../fonts";
+import SectionTag from "@/components/SectionTag";
 
 export default function Home() {
   return (
@@ -24,9 +25,9 @@ export default function Home() {
         image={AboutUsImg}
       />
       <HealthySchools>
-        <HealthySchoolsHeader className={recoletaLocalFont.className}>
+        <AboutHeader className={recoletaLocalFont.className}>
           Healthy Schools, Safe Environment! 🌍
-        </HealthySchoolsHeader>
+        </AboutHeader>
         <HealthySchoolsContent className={nunitoFont.className}>
           <HealthySchoolsContentParagraph>
             Centre for School Health Education and Environmental Hygiene
@@ -79,6 +80,18 @@ export default function Home() {
           </Text>
         </MissionTextContainer>
       </Mission>
+      <WhatWeDoContainer>
+        <WhatWeDoTextContainer>
+          <WhatWeDoTextContainerHeader className={recoletaLocalFont.className}>
+            What We Do
+          </WhatWeDoTextContainerHeader>
+          <Text>
+            Learn more on how we’re transforming communities through our mission
+            of building healthy schools, creating safe environments, and
+            empowering stronger, thriving communities.
+          </Text>
+        </WhatWeDoTextContainer>
+      </WhatWeDoContainer>
       <Grid>
         <GridItem
           headerImage={HornIcon}
@@ -115,6 +128,9 @@ export default function Home() {
           content="We conduct research to identify health and safety issues in schools, gathering valuable data. This information not only informs our actions but also serves as a resource for educators, policymakers, and the community. It empowers stakeholders to make evidence-based decisions, ultimately improving the health and safety of schools and their surroundings."
         />
       </Grid>
+      <Team>
+        <SectionTag tag="Meet our mangement team" color="#fff" />
+      </Team>
     </Root>
   );
 }
@@ -122,10 +138,10 @@ export default function Home() {
 const Root = styled.div(() => [tw``]);
 
 const HealthySchools = styled.div(() => [
-  tw`w-full flex flex-col lg:flex-row lg:justify-between sm:px-[50px] items-center gap-[20px] py-[70px] lg:py-[90px]`,
+  tw`w-full flex flex-col lg:flex-row lg:justify-between px-[50px] lg:px-[80px] sm:px-[50px] items-center gap-[20px] py-[70px] lg:py-[90px]`,
 ]);
 
-const HealthySchoolsHeader = styled.h2(() => [
+const AboutHeader = styled.h2(() => [
   tw`w-[200px] sm:w-[300px] lg:w-[400px] lg:text-left lg:self-start text-[22px] lg:text-[35px] leading-[30px] lg:leading-[47.6px] font-[600] text-center`,
 ]);
 
@@ -144,7 +160,7 @@ const MissionImageContainer = styled.div(() => [
 ]);
 
 const MissionTextContainer = styled.div(() => [
-  tw`w-[250px] sm:w-[350px] md:w-[383px] h-auto`,
+  tw`w-[250px] sm:w-[350px] md:w-[383px] h-full lg:self-start`,
 ]);
 
 const MissionTextContainerHeaderContainer = styled.div(() => [
@@ -155,6 +171,24 @@ const MissionTextContainerHeader = styled.h4(() => [
   tw`text-[18px] lg:text-[20px] text-black lg:leading-[27.2px] font-[600]`,
 ]);
 
+const WhatWeDoContainer = styled.div(() => [
+  tw`w-full py-[50px] lg:py-[90px] px-[50px] lg:px-[80px] flex flex-col items-center lg:items-start`,
+]);
+
+const WhatWeDoTextContainer = styled.div(() => [
+  tw`lg:w-[631px] w-full h-full flex flex-col gap-[10px]`,
+]);
+
+const WhatWeDoText = styled.p(() => [tw`w-full`]);
+
+const WhatWeDoTextContainerHeader = styled.h2(() => [
+  tw`w-[200px] sm:w-[300px] lg:w-[400px] lg:text-left lg:self-start text-[22px] lg:text-[35px] leading-[30px] lg:leading-[47.6px] font-[600] text-left`,
+]);
+
 const Grid = styled.div(() => [
   tw`w-full sm:w-3/4 lg:w-full px-[50px] lg:px-[80px] grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 items-center justify-center gap-[40px] lg:gap-x-[60.5px] lg:gap-y-[70px] pt-[40px] py-[97px] lg:pb-[171px]`,
+]);
+
+const Team = styled.div(() => [
+  tw`w-full bg-dark-blue py-[50px] lg:py-[90px] px-[50px] lg:px-[80px]`,
 ]);
