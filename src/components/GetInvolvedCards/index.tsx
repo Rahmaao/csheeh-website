@@ -16,14 +16,14 @@ import { recoletasemiboldLocalFont } from "@/app/fonts";
 const index = () => {
   return (
     <Root>
-      <div className="get-involved-hero bg-green-400 h-[100vh]"></div>
+      {/* <div className="get-involved-hero bg-green-400 h-[100vh]"></div> */}
       <GetInvolvedSection>  
       <Card>
         <div className="get-involved-text flex flex-col md:justify-between md:items-start items-center w-[100%] h-[60%] md:w-[60%] md:h-[90%] lg:h-[75%]">
-          <div className="get-involved-text1 w-[70%] md:w-[50%] h-[12%] md:h-[20%] flex items-center md:items-end md:justify-start justify-center">
+          <div className="get-involved-text1 w-[70%] md:w-[50%] h-[12%] md:h-[20%] flex items-center md:items-start md:justify-start justify-center">
             <GetInvolvedText1 className={recoletaboldLocalFont.className}>Make a donation</GetInvolvedText1>
           </div>
-          <div className="get-involved-text2 pt-3 md:pt-0 text-[11px] lg:text-[15px] w-full md:w-[80%] h-fit md:h-fit md:text-left text-center">
+          <div className="get-involved-text2 pt-3 md:pt-0 text-[11px] lg:text-[17px] w-full md:w-[80%] h-fit md:h-fit md:text-left text-center">
             <p>Every donation, no matter the size, plays a crucial role in helping us achieve these goals. With your support, we can provide children with healthier and more inspiring places to learn, ensure the safety of our communities, and empower individuals to thrive. By contributing to our cause, you're not just donating; you're investing in a brighter future. Join us in this meaningful journey of transformation, and together, we can build a healthier, safer, and more vibrant world for all.</p>
           </div>
           <div className="get-involved-btn w-[45%] md:w-[30%] md:h-[20%] h-[24%] flex md:justify-start items-end justify-center">

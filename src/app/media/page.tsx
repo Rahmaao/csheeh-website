@@ -1,6 +1,7 @@
 "use client";
 
 import PageHero from "@/components/PageHero";
+import MediaCards from "@/components/MediaCards";
 import React from "react";
 import tw, { styled } from "twin.macro";
 import MediaImg from "@/assets/images/media-page.png";
