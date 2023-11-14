@@ -67,7 +67,7 @@ const index = () => {
                 </label>
                 <textarea className="block p-2.5 w-full h-40 text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 bg-[#ffff]"></textarea>
               </div>
-              <div className="flex justify-end">
+              <div className="flex justify-center md:justify-end">
                 <SmallButton>Submit</SmallButton>
               </div>
             </form>
@@ -75,30 +75,28 @@ const index = () => {
         </Card>
       </ContactSection>
       <section className="h-[500px] w-full flex justify-center items-center">
-        <div className="h-[40%] w-[70%] drop-shadow-lg bg-[#3D3F94] rounded-[13px] mt-20 flex flex-col md:flex-row justify-center items-center">
-          <div className="h-[100%] w-[60%] flex flex-col justify-center items-center">
+        <div className=" h-[70%] md:h-[40%] w-[80%] drop-shadow-lg bg-[#3D3F94] rounded-[13px] mt-20 flex flex-col md:flex-row justify-center items-center">
+          <div className="h-[100%] w-[90%] md:w-[60%] flex flex-col justify-center items-center">
             <div className="h-[20%] w-[90%] flex justify-between">
               <SectionTag color="#ffffff" tag="VISIT OUR OFFICE" />
             </div>
-            <div className="flex h-[50%] w-[90%]">
+            <div className="flex h-[50%] w-[90%] bg-slate-400">
               <div className="w-[30px]">
                 <div className="w-[50%]">
                   <Image src={Location} alt="Location" className="icon-1" />
                 </div>
               </div>
               <div className="text-content ">
-                <p className="text2 text-[#ffff] text-[8px] md:text-[10px] lg:text-[15px] leading-6">
-                  Centre for School Health Education and Environmental Hygiene{" "}
-                  <br />
-                  (CSHEEH) <br />
-                  Sentosa Park, Near Fire Service, Zone A 1st Gate, Legislative
-                  <br />
-                  Quarters, Apo, Abuja.
+                <p className="text2 text-[#ffff] text-[10px] md:text-[10px] lg:text-[15px] leading-6">
+                <span className=" md:block">Centre for School Health Education and Environmental Hygiene </span>
+                <span className=" md:block"> (CSHEEH) </span>
+                <span className=" md:block">Sentosa Park, Near Fire Service, Zone A 1st Gate, Legislative </span>          
+                <span className=" md:block"> Quarters, Apo, Abuja. </span>
                 </p>
               </div>
             </div>
           </div>
-          <div className="h-[100%] w-[40%]  flex flex-col justify-center">
+          <div className="h-[100%] w-[90%] md:w-[40%]  flex flex-col justify-center">
             <div className="h-[20%] w-full flex items-center">
               <SectionTag color="#ffffff" tag="CONTACT US DIGITALLY" />
             </div>  
@@ -110,7 +108,7 @@ const index = () => {
                 </div>
               </div>
               <div className="text-content">
-                <p className="text3 text-[8px] text-[#ffff] md:text-[10px] lg:text-[15px] pl-1">info@csheehnigeria.org</p>
+                <p className="text3 text-[10px] text-[#ffff] md:text-[10px] lg:text-[15px] pl-1">info@csheehnigeria.org</p>
               </div>
             </div>
               <div className="h-[30%] w-[90%] flex">
@@ -120,12 +118,12 @@ const index = () => {
                 </div>
               </div>
               <div className="text-content">
-                <p className="text3 text-[8px] text-[#ffff] md:text-[10px] lg:text-[15px] pl-1">
+                <p className="text3 text-[10px] text-[#ffff] md:text-[10px] lg:text-[15px] pl-1">
                   +234 803 787 1487; +234 805 356 3370
                 </p>
               </div>
             </div>
-            <div className="h-[22%] w-[25%] flex justify-start items-center">
+            <div className="h-[22%] w-full md:w-[25%] flex justify-center bg-yellow-400 md:justify-start items-center">
               <div className="logo-img1">
                 <Image src={facebook} alt="facebook" className="icon-1" />
               </div>
@@ -146,7 +144,7 @@ export default index;
 const Root = styled.div(() => [tw`w-full h-[100vh]`, css``]);
 
 const Card = styled.div(() => [
-  tw`w-[50%] h-[680px] bg-[#ffff] drop-shadow-md rounded-lg`,
+  tw`w-[80%] md:w-[50%] h-[720px] md:h-[680px] bg-[#ffff] drop-shadow-md rounded-lg`,
   css``,
 ]);
 
