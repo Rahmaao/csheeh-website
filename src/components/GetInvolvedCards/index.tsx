@@ -115,7 +115,7 @@ const Card = styled.div(() => [
 ]);
 
 const GetInvolvedSection = styled.div(() => [
-  tw`bg-[#ffff] md:h-[50vh] lg:h-[100vh] flex justify-center items-center`,
+  tw`bg-[#ffff] md:h-[50vh] lg:h-[100vh] flex justify-center items-center pt-12 md:pt-0`,
   css`get-involved-section`,
 ]);
 

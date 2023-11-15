@@ -144,7 +144,7 @@ export default index;
 const Root = styled.div(() => [tw`w-full h-[100vh]`, css``]);
 
 const Card = styled.div(() => [
-  tw`w-[80%] md:w-[50%] h-[720px] md:h-[680px] bg-[#ffff] drop-shadow-md rounded-lg`,
+  tw`w-[80%] mt-12 md:mt-0 md:w-[75%] lg:w-[50%] h-[720px] md:h-[680px] bg-[#ffff] drop-shadow-md rounded-lg`,
   css``,
 ]);
 
