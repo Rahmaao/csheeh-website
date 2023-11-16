@@ -4,6 +4,7 @@ import React from "react";
 import PageHero from "@/components/PageHero";
 import tw, { styled } from "twin.macro";
 import ContactUsImg from "@/assets/images/contact-us.png";
+import ContactForm from "@/components/ContactForm";
 
 const ContactUs = () => {
   return (
@@ -13,6 +14,7 @@ const ContactUs = () => {
         subHeader="Want to partner with us or make inquiries, feel free to reach out to us with any questions or inquiries."
         image={ContactUsImg}
       />
+       <ContactForm />
     </Root>
   );
 };
