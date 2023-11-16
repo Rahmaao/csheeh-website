@@ -21,6 +21,7 @@ import pads from "@/assets/images/pads.png";
 import taps from "@/assets/images/taps.png";
 import ButtonImage from "@/components/Button/ButtonImage";
 import SectionTag from "@/components/SectionTag";
+import Header from "@/components/Typography/Header";
 import Image from "next/image";
 import Link from "next/link";
 import tw, { styled } from "twin.macro";
