@@ -9,5 +9,5 @@ const Text = ({ children }: { children: React.ReactNode }) => {
 export default Text;
 
 const Root = styled.div(() => [
-  tw`w-full border-none text-[15px] lg:text-[18px] lg:leading-[30px] leading-[25px] font-[400] text-[#333333]`,
+  tw`w-full border-none text-[15px] lg:text-[17px] lg:leading-[28px] leading-[25px] font-[400] text-[#333333]`,
 ]);

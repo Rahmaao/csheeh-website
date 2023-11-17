@@ -9,7 +9,7 @@ const SubHeader = ({ children }: { children: React.ReactNode }) => {
 export default SubHeader;
 
 const Root = styled.div(() => [
-  tw`w-full border-none text-[35px] leading-[48px] [letter-spacing: 0.02em] font-extrabold`,
+  tw`w-full border-none text-[35px] leading-[48px] [letter-spacing: 0.02em] font-extrabold lg:text-left`,
 ]);
 
 // font-family: Recoleta Alt;

@@ -8,6 +8,7 @@ interface MediaCardProps {
   linkAddress: string;
   mediaHeader: string;
   date: string;
+  rowVariant?: boolean;
 }
 
 const MediaCard = ({
@@ -48,7 +49,7 @@ const MediaTextContainer = styled.div(() => [
 ]);
 
 const MediaHeader = styled.h3(() => [
-  tw`text-[15px] lg:text-[17px] leading-[24px] text-center`,
+  tw`text-[15px] lg:text-[17px] leading-[24px] text-center font-bold`,
 ]);
 
 const MediaDate = styled.p(() => [
