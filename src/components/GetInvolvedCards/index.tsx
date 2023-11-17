@@ -36,6 +36,7 @@ const index = () => {
               />
             </GetInvolvedImage>
           </div>
+          </div>
         </Card>
       </GetInvolvedSection>
       <GetInvolvedSection>

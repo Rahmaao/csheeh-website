@@ -30,18 +30,22 @@ export default function Home() {
         </AboutHeader>
         <HealthySchoolsContent className={nunitoFont.className}>
           <HealthySchoolsContentParagraph>
-            Centre for School Health Education and Environmental Hygiene
-            (CSHEEH) is an Abuja-based non-governmental, non-profit and
-            non-political organization duly registered with the Corporate
-            Affairs Commission on 1st June, 2015.
+            <Text>
+              Centre for School Health Education and Environmental Hygiene
+              (CSHEEH) is an Abuja-based non-governmental, non-profit and
+              non-political organization duly registered with the Corporate
+              Affairs Commission on 1st June, 2015.
+            </Text>
           </HealthySchoolsContentParagraph>
           <HealthySchoolsContentParagraph>
-            At CSHEEH, our passion is geared towards promoting health in schools
-            and ensuring a safe environment. We firmly believe that education
-            goes beyond textbooks; it begins with healthy bodies and minds. With
-            this vision in mind, we work tirelessly to promote healthy schools
-            and cultivate safe, hygienic spaces that foster holistic development
-            for students.
+            <Text>
+              At CSHEEH, our passion is geared towards promoting health in
+              schools and ensuring a safe environment. We firmly believe that
+              education goes beyond textbooks; it begins with healthy bodies and
+              minds. With this vision in mind, we work tirelessly to promote
+              healthy schools and cultivate safe, hygienic spaces that foster
+              holistic development for students.
+            </Text>
           </HealthySchoolsContentParagraph>
         </HealthySchoolsContent>
       </HealthySchools>

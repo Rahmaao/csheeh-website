@@ -14,18 +14,19 @@ import WhatWeDoImage from "@/assets/images/what-we-do.png";
 import Button from "@/components/Button";
 import TransparentButton from "@/components/Button/Transparent";
 import GridItem from "@/components/GridItem";
-import Header from "@/components/typography/Header";
+import Header from "@/components/Typography/Header";
 import { recoletasemiboldLocalFont } from "@/app/fonts";
 import handwashing from "@/assets/images/handwashing.png";
 import pads from "@/assets/images/pads.png";
 import taps from "@/assets/images/taps.png";
 import ButtonImage from "@/components/Button/ButtonImage";
-import SectionTag from "@/components/SectionTag";
-import Header from "@/components/Typography/Header";
 import Image from "next/image";
 import Link from "next/link";
 import tw, { styled } from "twin.macro";
 import { nunitoFont, recoletaLocalFont } from "./fonts";
+import SectionTag from "@/components/SectionTag";
+import Text from "@/components/Typography/Text";
+import MediaCard from "@/components/MediaCard";
 
 export default function Home() {
   return (
@@ -64,12 +65,14 @@ export default function Home() {
               What We Do
             </WhatWeDoHeader>
             <WhatWeDoText>
-              At CSHEEH, our passion is geared towards promoting health in
-              schools and ensuring a safe environment. We firmly believe that
-              education goes beyond textbooks; it begins with healthy bodies and
-              minds. With this vision in mind, we work tirelessly to promote
-              healthy schools and cultivate safe, hygienic spaces that foster
-              holistic development for students.
+              <Text>
+                At CSHEEH, our passion is geared towards promoting health in
+                schools and ensuring a safe environment. We firmly believe that
+                education goes beyond textbooks; it begins with healthy bodies
+                and minds. With this vision in mind, we work tirelessly to
+                promote healthy schools and cultivate safe, hygienic spaces that
+                foster holistic development for students.
+              </Text>
             </WhatWeDoText>
             <TransparentButton>
               Learn More
@@ -175,70 +178,27 @@ export default function Home() {
         <LatestArticles>
           <SectionTag tag="Latest Articles" color="#058A51" />
           <MediaText1 className={recoletasemiboldLocalFont.className}>
-              News, Press + Featured Articles
-            </MediaText1>
-            <div className="media-cards h-[450px] md:h-auto pt-0 md:pt-14 w-full flex flex-col justify-evenly items-center">
-          <MediaCard>
-            <a target="_blank" href="https://nannews.ng/2023/10/19/organisation-calls-for-coordinated-efforts-in-pursuit-of-universal-hand-hygiene/" className="media-card w-[100%] md:w-[85%] lg:w-[30%] h-[30%] lg:h-[90%]  flex lg:flex-col items-center">
-              <div className="media-image h-full lg:h-[75%] w-[50%] lg:w-full flex justify-center items-center">
-                <MediaImage>
-                  <Image
-                    className=" w-[93%] h-[93%] rounded-full"
-                    src={taps}
-                    alt="Location"
-                  />
-                </MediaImage>
-              </div>
-              <div className="media-img-text h-[50%] lg:h-[25%] w-[50%] lg:w-[90%] lg:pt-4  flex flex-col items-center justify-evenly">
-                <p className="text-[10px] md:text-[13px] font-bold text-center">
-                  NGO Donates Handwashing Facilities To FCT School
-                </p>
-                <span className="block text-[#058A51] text-[10px] md:text-[12px] font-semibold">
-                  <p>OCTOBER 21, 2023</p>
-                </span>
-              </div>
-            </a>
-            <a target="_blank" href="https://www.abujadigest.info/stories/education/ngo-donates-handwashing-facilities-to-fct-school/" className="media-card w-[100%] md:w-[85%] lg:w-[30%] h-[30%] lg:h-[90%]  flex lg:flex-col items-center">
-              <div className="media-image h-full lg:h-[75%] w-[50%] lg:w-full  flex justify-center items-center">
-                <MediaImage>
-                  <Image
-                    className=" w-[93%] h-[93%] rounded-full"
-                    src={handwashing}
-                    alt="Location"
-                  />
-                </MediaImage>
-              </div>
-              <div className="media-img-text h-[50%] lg:h-[25%] w-[50%] lg:w-[90%] lg:pt-4  flex flex-col items-center justify-evenly">
-                <p className="text-[10px] md:text-[13px] font-bold text-center">
-                  Organisation calls for coordinated efforts in pursuit of
-                  universal hand hygiene
-                </p>
-                <span className="block text-[#058A51] text-[10px] md:text-[12px] font-semibold">
-                  <p>OCTOBER 19, 2023</p>
-                </span>
-              </div>
-            </a>
-            <a target="_blank" href="https://www.abujadigest.info/stories/health/world-menstrual-hygiene-day-stakeholders-call-for-early-pre-menstrual-counseling/" className="media-card w-[100%] md:w-[85%] lg:w-[30%] h-[30%] lg:h-[90%]  flex lg:flex-col items-center">
-              <div className="media-image h-full lg:h-[75%] w-[50%] lg:w-full  flex justify-center items-center">
-                <MediaImage>
-                  <Image
-                    className=" w-[93%] h-[93%] rounded-full"
-                    src={pads}
-                    alt="Location"
-                  />
-                </MediaImage>
-              </div>
-              <div className="media-img-text h-[50%] lg:h-[25%] w-[50%] lg:w-[100%] lg:pt-4  flex flex-col items-center justify-evenly">
-                <p className="text-[10px] md:text-[13px] font-bold text-center">
-                  World Menstrual Hygiene Day: Stakeholders Call for Early
-                  Pre-menstrual Counseling
-                </p>
-                <span className="block text-[#058A51] text-[10px] md:text-[12px] font-semibold">
-                  <p>MAY 30, 2023</p>
-                </span>
-              </div>
-            </a>
-          </MediaCard>
+            <Link href="/media#news"> News, Press + Featured Articles</Link>
+          </MediaText1>
+          <div className="w-full grid grid-cols-1 h-auto lg:grid-cols-3 justify-between">
+            <MediaCard
+              image={handwashing}
+              mediaHeader="NGO Donates Handwashing Facilities To FCT School"
+              date="OCTOBER 21, 2023"
+              linkAddress="https://www.google.com"
+            />
+            <MediaCard
+              image={handwashing}
+              mediaHeader="NGO Donates Handwashing Facilities To FCT School"
+              date="OCTOBER 21, 2023"
+              linkAddress="https://www.google.com"
+            />
+            <MediaCard
+              image={handwashing}
+              mediaHeader="NGO Donates Handwashing Facilities To FCT School"
+              date="OCTOBER 21, 2023"
+              linkAddress="https://www.google.com"
+            />
           </div>
         </LatestArticles>
         <Donation
@@ -357,7 +317,7 @@ const GetInvolvedImageContainer = styled.div(() => [
 ]);
 
 const LatestArticles = styled.div(() => [
-  tw`w-full bg-lime px-[40px] lg:px-[80px] h-[100vh] py-[50px]`,
+  tw`w-full bg-lime px-[40px] lg:px-[80px] h-auto py-[50px]`,
 ]);
 
 const Donation = styled.div(() => [
@@ -371,12 +331,12 @@ const DonationContentHeader = styled.h2(() => [
 ]);
 
 const MediaText1 = styled.div(() => [
-  tw`text-[22px] md:text-[27px] w-full h-[17%] tracking-wide text-center flex items-center md:justify-normal justify-center`,
+  tw`text-[22px] md:text-[27px] w-full h-[17%] tracking-wide text-center flex items-center md:justify-start justify-center mb-[56px] mt-[11px]`,
 ]);
 
-const MediaCard = styled.div(() => [
-  tw` w-[100%] lg:w-[90%] h-[90%] flex lg:flex-row flex-col justify-between items-center`,
-]);
+// const MediaCard = styled.div(() => [
+//   tw` w-[100%] lg:w-[90%] h-[90%] flex lg:flex-row flex-col justify-between items-center`,
+// ]);
 
 const MediaImage = styled.div(() => [
   tw`border border-solid border-[#C4C4C4] w-[125px] h-[125px] md:w-[210px] md:h-[210px] lg:w-[260px] lg:h-[260px] rounded-full flex justify-center items-center `,
