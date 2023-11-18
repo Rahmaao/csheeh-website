@@ -80,7 +80,6 @@ const Media = () => {
           date="OCTOBER 21, 2023"
         />
       </MediaGrid>
-      {/* <MediaCards /> */}
     </Root>
   );
 };
