@@ -10,7 +10,6 @@ import { openSansFont } from "@/app/fonts";
 import Button from "@/components/Button";
 import ButtonImage from "@/components/Button/ButtonImage";
 import useWindowDimensions from "@/app/hooks/useWindowDimensions";
-import useScrollPosition from "@/app/hooks/useScrollPosition";
 
 const LayoutHeader = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
