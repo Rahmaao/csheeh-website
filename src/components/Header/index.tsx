@@ -9,9 +9,12 @@ import HeartIcon from "@/assets/icons/Heart.svg";
 import { openSansFont } from "@/app/fonts";
 import Button from "@/components/Button";
 import ButtonImage from "@/components/Button/ButtonImage";
+import useWindowDimensions from "@/app/hooks/useWindowDimensions";
+import useScrollPosition from "@/app/hooks/useScrollPosition";
 
 const LayoutHeader = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const { width, height } = useWindowDimensions();
 
   if (typeof window !== "undefined") {
     const body = document.body;
@@ -27,21 +30,20 @@ const LayoutHeader = () => {
       if (currScroll > lastScroll && !body.classList.contains("scroll-down")) {
         body.classList.remove("scroll-up");
         body.classList.add("scroll-down");
-
-        console.log("Should remove the class");
       }
 
-      if (currScroll < lastScroll && body.classList.contains("scroll-down")) {
+      if (
+        (currScroll < lastScroll && body.classList.contains("scroll-down")) ||
+        window.scrollY < height / 2
+      ) {
         body.classList.remove("scroll-down");
         body.classList.add("scroll-up");
-
-        console.log("Should add the class");
       }
 
       lastScroll = currScroll;
     });
 
-    if (isMenuOpen) {
+    if (isMenuOpen && width <= 1024) {
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "unset";
@@ -77,7 +79,7 @@ const LayoutHeader = () => {
           </Button>
         </Navigation>
       </Header>
-      <Sidebar className="scroll-up">
+      <MobileHeader>
         <Link href="/">
           <Logo>
             <Image src={LogoImage} alt="logo" height={38.65} />
@@ -103,8 +105,8 @@ const LayoutHeader = () => {
             d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
           />
         </svg>
-      </Sidebar>
-      <MobileNav className={isMenuOpen ? "sidebar-open" : "sidebar-close"}>
+      </MobileHeader>
+      <Sidebar className={isMenuOpen ? "sidebar-open" : "sidebar-close"}>
         <SidebarButton
           onClick={() => {
             setIsMenuOpen(!isMenuOpen);
@@ -142,8 +144,7 @@ const LayoutHeader = () => {
           <ButtonImage src={HeartIcon} alt="heart" />
           Donate Now
         </Button>
-      </MobileNav>
-      {/* Todo Sidebar */}
+      </Sidebar>
     </>
   );
 };
@@ -185,11 +186,11 @@ const NavigationItems = styled.div(() => [
   tw`flex justify-between items-center text-white font-[600] leading-[19.07px] w-[400px] h-[50px]`,
 ]);
 
-const MobileNav = styled.div(() => [
+const Sidebar = styled.div(() => [
   tw`w-full z-50 h-full fixed flex flex-col px-4 py-8 bg-black bg-opacity-90 ease-in-out transition-all duration-200 lg:hidden`,
 ]);
 
-const Sidebar = styled.header(() => [
+const MobileHeader = styled.header(() => [
   tw`fixed z-40 w-full flex justify-between ease-in-out transition-all bg-black  bg-opacity-30  duration-200 h-20 lg:hidden items-center px-[20px]`,
 ]);
 
