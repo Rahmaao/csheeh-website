@@ -151,11 +151,11 @@ export default index;
 const Root = styled.div(() => [tw`w-full h-[100vh]`, css``]);
 
 const Card = styled.div(() => [
-  tw`w-[80%] absolute top-[38rem] md:top-[40rem] lg:top-[28rem] md:w-[75%] lg:w-[713px] bg-[#ffff] h-[80%] md:h-[620px] lg:h-[620px] drop-shadow-md rounded-lg`,
-  css`contact-card`,
+  tw`w-[80%] relative top-[-150px] lg:top-[-120px] md:w-[75%] lg:w-[713px] bg-[#ffff] py-[20px] lg:py-[50px] drop-shadow-md rounded-lg`,
+  css``,
 ]);
 
 const ContactSection = styled.div(() => [
-  tw`h-[75vh] md:h-[55vh] lg:h-[100vh] flex flex-col justify-center items-center`,
+  tw`flex flex-col justify-center items-center`,
   css`get-involved-section`,
 ]);
