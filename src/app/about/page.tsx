@@ -4,10 +4,12 @@ import AdvocacyIcon from "@/assets/icons/advocacy.svg";
 import CapacityIcon from "@/assets/icons/building.svg";
 import HornIcon from "@/assets/icons/horn.svg";
 import MedicalIcon from "@/assets/icons/medical-outrages.svg";
+import MediaCard1 from "@/components/TeamCards";
 import PromotingIcon from "@/assets/icons/promoting.svg";
 import ReserachIcon from "@/assets/icons/research.svg";
 import AboutUsImg from "@/assets/images/about-us.png";
 import MissionImg from "@/assets/images/get-involved.png";
+import tapsImg from "@/assets/images/taps.png";
 import GridItem from "@/components/GridItem";
 import PageHero from "@/components/PageHero";
 import Text from "@/components/Typography/Text";
@@ -137,7 +139,89 @@ export default function Home() {
         />
       </Grid>
       <Team>
-        <SectionTag tag="Meet our mangement team" color="#fff" />d
+        <SectionTag tag="Meet our mangement team" color="#fff" />
+        <GetInvolvedContentHeader className={recoletaLocalFont.className}>
+          Board of Directors
+        </GetInvolvedContentHeader>
+        <GetInvolvedContentBody className={nunitoFont.className}>
+          Meet our distinguished Board of Directors, a group of accomplished
+          individuals dedicated to guiding our organization towards success and
+          innovation.
+        </GetInvolvedContentBody>
+        <MediaGrid>
+          <MediaCard1
+            color="#fff"
+            mediaHeader="NGO Donates Handwashing Facilities to FCT School"
+            image={tapsImg}
+            subheader="OCTOBER 21, 2023"
+          />
+          <MediaCard1
+            color="#fff"
+            mediaHeader="NGO Donates Handwashing Facilities to FCT School"
+            image={tapsImg}
+            subheader="OCTOBER 21, 2023"
+          />
+          <MediaCard1
+            color="#fff"
+            mediaHeader="NGO Donates Handwashing Facilities to FCT School"
+            image={tapsImg}
+            subheader="OCTOBER 21, 2023"
+          />
+          <MediaCard1
+            color="#fff"
+            mediaHeader="NGO Donates Handwashing Facilities to FCT School"
+            image={tapsImg}
+            subheader="OCTOBER 21, 2023"
+          />
+          <MediaCard1
+            color="#fff"
+            mediaHeader="NGO Donates Handwashing Facilities to FCT School"
+            image={tapsImg}
+            subheader="OCTOBER 21, 2023"
+          />
+          <MediaCard1
+            color="#fff"
+            mediaHeader="NGO Donates Handwashing Facilities to FCT School"
+            image={tapsImg}
+            subheader="OCTOBER 21, 2023"
+          />
+          <MediaCard1
+            color="white"
+            mediaHeader="NGO Donates Handwashing Facilities to FCT School"
+            image={tapsImg}
+            subheader="OCTOBER 21, 2023"
+          />
+          <MediaCard1
+            color="#fff"
+            mediaHeader="NGO Donates Handwashing Facilities to FCT School"
+            image={tapsImg}
+            subheader="OCTOBER 21, 2023"
+          />
+          <MediaCard1
+            color="#fff"
+            mediaHeader="NGO Donates Handwashing Facilities to FCT School"
+            image={tapsImg}
+            subheader="OCTOBER 21, 2023"
+          />
+          <MediaCard1
+            color="white"
+            mediaHeader="NGO Donates Handwashing Facilities to FCT School"
+            image={tapsImg}
+            subheader="OCTOBER 21, 2023"
+          />
+          <MediaCard1
+            color="#fff"
+            mediaHeader="NGO Donates Handwashing Facilities to FCT School"
+            image={tapsImg}
+            subheader="OCTOBER 21, 2023"
+          />
+          <MediaCard1
+            color="#fff"
+            mediaHeader="NGO Donates Handwashing Facilities to FCT School"
+            image={tapsImg}
+            subheader="OCTOBER 21, 2023"
+          />
+        </MediaGrid>
       </Team>
     </Root>
   );
@@ -187,4 +271,20 @@ const Grid = styled.div(() => [
 
 const Team = styled.div(() => [
   tw`w-full bg-dark-blue py-[50px] lg:py-[90px] px-[50px] lg:px-[80px]`,
+]);
+
+const MediaGrid = styled.div(() => [
+  tw`w-full grid grid-cols-1 md:grid-cols-2 py-[78px] lg:grid-cols-4`,
+]);
+
+const mediaHeader = styled.div(() => [
+  tw`w-full mt-[120px] mb-[80px] px-[40px] lg:px-[80px] lg:w-[700px]`,
+]);
+
+const GetInvolvedContentHeader = styled.h2(() => [
+  tw`text-[#ffff] text-[30px] lg:text-[35px] pt-[11px] leading-[42.03px] text-left`,
+]);
+
+const GetInvolvedContentBody = styled.p(() => [
+  tw`text-[#ffff] md:w-[70%] text-[15px] lg:text-[18px] font-[400] leading-[25px] lg:leading-[30px] pt-[12px]`,
 ]);

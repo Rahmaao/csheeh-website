@@ -212,16 +212,75 @@
   }
 }
 
-@media screen and (max-width: 376px) {  
-   
-  .contact-card{
-    background-color: #058a51;
-  }
+.scroll-down header {
+  transform: translate3d(0, -100%, 0);
+}
+
+.scroll-up header {
+  filter: drop-shadow(0, -10px, 20px, rgb(170, 170, 170));
+}
+
+.sidebar-open {
+  transform: translateX(0%);
+}
+
+.sidebar-close {
+  background-color: rebeccapurple;
+  transform: translateX(100%);
+}
+
+.curve {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.curve svg {
+  position: relative;
+  display: block;
+  width: calc(137% + 1.3px);
+  height: 93px;
+  transform: rotateY(180deg);
+}
+
+.curve .shape-fill {
+  fill: #e6f3ee;
+}
+
+.top-curve {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  border: transparent;
+  outline: transparent;
+  stroke: none;
+}
+
+.top-curve svg {
+  position: relative;
+  display: block;
+  width: calc(137% + 1.5px);
+  height: 70px;
+  transform: rotateY(180deg);
+  stroke: transparent;
+  stroke-width: 10 px;
+  stroke: tomato;
+}
+
+.top-curve .shape-fill__white {
+  fill: #ffffff;
+  stroke: none;
+}
 
 
-    
-  
-} 
 
 
   

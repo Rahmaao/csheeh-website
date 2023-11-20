@@ -23,11 +23,9 @@ export default function RootLayout({
     <html lang="en" className={nunitoFont.className}>
       <body className="w-full">
         <StyledComponentsRegistry>
-          <NextUIProvider>
-            <LayoutHeader />
-            <div className="min-h-[100vh] w-full">{children}</div>
-            {/* <Footer/> */}
-          </NextUIProvider>
+          <LayoutHeader />
+          <div className="min-h-[100vh] w-full">{children}</div>
+          {/* <Footer/> */}
         </StyledComponentsRegistry>
       </body>
     </html>
