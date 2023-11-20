@@ -16,7 +16,6 @@ import { recoletasemiboldLocalFont } from "@/app/fonts";
 const index = () => {
   return (
     <Root>
-      {/* <div className="get-involved-hero bg-green-400 h-[100vh]"></div> */}
       <GetInvolvedSection>  
       <Card>
         <div className="get-involved-text flex flex-col md:justify-between md:items-start items-center w-[100%] h-[60%] md:w-[60%] md:h-[90%] lg:h-[75%]">

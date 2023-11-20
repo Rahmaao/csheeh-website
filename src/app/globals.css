@@ -213,24 +213,17 @@
 }
 
 
-/* @media screen and (max-width: 376px) {
+@media screen and (max-width: 376px) {  
+   
+  .contact-card{
+    background-color: #058a51;
+  }
 
-    media-img{
-        width: 125px;
-        height: 125px;
-    }
+
     
   
-} */
+} 
 
-/* @media screen and (min-width: 377px) and (max-width: 500px) {
 
-    media-img{
-        width: 145px;
-        height: 145px;
-    }
-    
-  
-} */
   
 
