@@ -1,6 +1,7 @@
 import { StaticImageData } from "next/dist/shared/lib/get-img-props";
 import tw, { styled } from "twin.macro";
 import { recoletaLocalFont } from "@/app/fonts";
+import Curve from "../Curve";
 
 interface IPageHeroProps {
   header: string;
@@ -15,10 +16,12 @@ const index = ({ image, header, subHeader }: IPageHeroProps) => {
         backgroundImage: `url(${image.src})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
+        position: "relative",
       }}
     >
       <HeroHeader className={recoletaLocalFont.className}>{header}</HeroHeader>
       <HeroContent>{subHeader}</HeroContent>
+      <Curve fillColor="#ffffff" />
     </Root>
   );
 };

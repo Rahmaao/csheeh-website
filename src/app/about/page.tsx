@@ -10,16 +10,13 @@ import AboutUsImg from "@/assets/images/about-us.png";
 import MissionImg from "@/assets/images/get-involved.png";
 import GridItem from "@/components/GridItem";
 import PageHero from "@/components/PageHero";
+import SectionTag from "@/components/SectionTag";
+import SubHeader from "@/components/Typography/SubHeader";
 import Text from "@/components/Typography/Text";
 import Image from "next/image";
 import tw, { styled } from "twin.macro";
-import {
-  nunitoFont,
-  recoletasemiboldLocalFont,
-  recoletaLocalFont,
-} from "../fonts";
-import SectionTag from "@/components/SectionTag";
-import SubHeader from "@/components/Typography/SubHeader";
+import { recoletaLocalFont, recoletasemiboldLocalFont } from "../fonts";
+import Curve from "@/components/Curve";
 
 export default function Home() {
   return (
@@ -100,7 +97,7 @@ export default function Home() {
           </Text>
         </WhatWeDoTextContainer>
       </WhatWeDoContainer>
-      <Grid>
+      <Grid className="relative">
         <GridItem
           headerImage={HornIcon}
           headerText="Health Education and Awareness Creation"
@@ -135,6 +132,8 @@ export default function Home() {
           headerText="Research"
           content="We conduct research to identify health and safety issues in schools, gathering valuable data. This information not only informs our actions but also serves as a resource for educators, policymakers, and the community. It empowers stakeholders to make evidence-based decisions, ultimately improving the health and safety of schools and their surroundings."
         />
+
+        <Curve fillColor="#3D3F94" />
       </Grid>
       <Team>
         <SectionTag tag="Meet our mangement team" color="#fff" />d

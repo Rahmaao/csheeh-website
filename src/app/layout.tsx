@@ -26,7 +26,7 @@ export default function RootLayout({
           <NextUIProvider>
             <LayoutHeader />
             <div className="min-h-[100vh] w-full">{children}</div>
-            {/* <Footer/> */}
+            <Footer />
           </NextUIProvider>
         </StyledComponentsRegistry>
       </body>

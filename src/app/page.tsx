@@ -1,4 +1,5 @@
 "use client";
+import { recoletasemiboldLocalFont } from "@/app/fonts";
 import HeartIcon from "@/assets/icons/Heart.svg";
 import AdvocacyIcon from "@/assets/icons/advocacy.svg";
 import BlackArrowRight from "@/assets/icons/black-arrow-right.svg";
@@ -9,24 +10,22 @@ import PromotingIcon from "@/assets/icons/promoting.svg";
 import ReserachIcon from "@/assets/icons/research.svg";
 import DonateImg from "@/assets/images/donate.png";
 import GetInvolvedImg from "@/assets/images/get-involved.png";
+import handwashing from "@/assets/images/handwashing.png";
 import HeroBg from "@/assets/images/hero-bg.png";
 import WhatWeDoImage from "@/assets/images/what-we-do.png";
 import Button from "@/components/Button";
-import TransparentButton from "@/components/Button/Transparent";
-import GridItem from "@/components/GridItem";
-import Header from "@/components/Typography/Header";
-import { recoletasemiboldLocalFont } from "@/app/fonts";
-import handwashing from "@/assets/images/handwashing.png";
-import pads from "@/assets/images/pads.png";
-import taps from "@/assets/images/taps.png";
 import ButtonImage from "@/components/Button/ButtonImage";
+import TransparentButton from "@/components/Button/Transparent";
+import Curve from "@/components/Curve";
+import GridItem from "@/components/GridItem";
+import MediaCard from "@/components/MediaCard";
+import SectionTag from "@/components/SectionTag";
+import Header from "@/components/Typography/Header";
+import Text from "@/components/Typography/Text";
 import Image from "next/image";
 import Link from "next/link";
 import tw, { styled } from "twin.macro";
 import { nunitoFont, recoletaLocalFont } from "./fonts";
-import SectionTag from "@/components/SectionTag";
-import Text from "@/components/Typography/Text";
-import MediaCard from "@/components/MediaCard";
 
 export default function Home() {
   return (
@@ -37,6 +36,7 @@ export default function Home() {
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
         }}
+        className="relative"
       >
         <HeroContent>
           <Header>
@@ -57,9 +57,10 @@ export default function Home() {
             />
           </Button>
         </HeroContent>
+        <Curve fillColor="#FFFFFF" />
       </Hero>
       <MainContent>
-        <WhatWeDo>
+        <WhatWeDo className="relative">
           <WhatWeDoContent>
             <WhatWeDoHeader className={recoletaLocalFont.className}>
               What We Do
@@ -109,7 +110,7 @@ export default function Home() {
             />
           </WhatWeDoImageContainer>
         </WhatWeDo>
-        <Grid>
+        <Grid className="relative">
           <GridItem
             headerImage={HornIcon}
             headerText="Health Education and Awareness Creation"
@@ -144,21 +145,10 @@ export default function Home() {
             headerText="Research"
             content="We conduct research to identify health and safety issues in schools, gathering valuable data. This information not only informs our actions but also serves as a resource for educators, policymakers, and the community. It empowers stakeholders to make evidence-based decisions, ultimately improving the health and safety of schools and their surroundings."
           />
+
+          <Curve fillColor="#3D3F94" />
         </Grid>
         <GetInvolved className="relative">
-          <div className="top-curve">
-            <svg
-              data-name="Layer 1"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 1200 120"
-              preserveAspectRatio="none"
-            >
-              <path
-                d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
-                className="fill-white stroke-none"
-              ></path>
-            </svg>
-          </div>
           <GetInvolvedContent>
             <SectionTag tag="Get Involved" color="white" />
             <GetInvolvedContentHeader className={recoletaLocalFont.className}>
@@ -186,22 +176,10 @@ export default function Home() {
               }}
               alt="get-involved-image"
             />
-          </GetInvolvedImageContainer>{" "}
-          <div className="curve">
-            <svg
-              data-name="Layer 1"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 1200 120"
-              preserveAspectRatio="none"
-            >
-              <path
-                d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-                className="shape-fill"
-              ></path>
-            </svg>
-          </div>
+          </GetInvolvedImageContainer>
+          <Curve fillColor="#E6F3EE" />
         </GetInvolved>
-        <LatestArticles>
+        <LatestArticles className="relative">
           <SectionTag tag="Latest Articles" color="#058A51" />
           <MediaText1 className={recoletasemiboldLocalFont.className}>
             <Link href="/media#news"> News, Press + Featured Articles</Link>
@@ -232,6 +210,7 @@ export default function Home() {
             backgroundImage: `url(${DonateImg.src})`,
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
+            position: "relative",
           }}
         >
           <DonationContent>
@@ -249,6 +228,7 @@ export default function Home() {
               Donate Now
             </Button>
           </DonationContent>
+          <Curve fillColor="#030426" />
         </Donation>
       </MainContent>
     </Root>
@@ -295,7 +275,7 @@ const WhatWeDoImageContainer = styled.div(() => [
 ]);
 
 const Grid = styled.div(() => [
-  tw`w-full sm:w-3/4 lg:w-full px-[50px] lg:px-[80px] grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 items-center justify-center gap-[40px] lg:gap-x-[60.5px] lg:gap-y-[70px] pt-[40px] py-[97px] lg:pb-[171px]`,
+  tw`w-full md:px-[70px] px-[50px] lg:px-[80px] grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 items-center justify-center gap-[40px] lg:gap-x-[60.5px] lg:gap-y-[70px] pt-[40px] py-[97px] lg:pb-[171px]`,
 ]);
 
 const GetInvolved = styled.div(() => [
@@ -343,7 +323,7 @@ const GetInvolvedImageContainer = styled.div(() => [
 ]);
 
 const LatestArticles = styled.div(() => [
-  tw`w-full bg-lime px-[40px] lg:pt-[250px] lg:pb-[80px] h-auto py-[50px]`,
+  tw`w-full bg-lime px-[40px] lg:pt-[250px] lg:pb-[20px] h-auto py-[50px]`,
 ]);
 
 const Donation = styled.div(() => [
