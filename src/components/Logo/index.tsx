@@ -15,10 +15,12 @@ const index = () => {
           className="flex justify-center items-center"
         />
       </LogoImage>
-      <LogoText>
-        <p className={openSansFont.className}>
-          CENTRE FOR SCHOOL <br /> HEALTH EDUCATION AND ENVIRONMENTAL HYGIENE
-        </p>
+      <LogoText
+        css={{
+          fontFamily: "Open Sans",
+        }}
+      >
+        CENTRE FOR SCHOOL <br /> HEALTH EDUCATION AND ENVIRONMENTAL HYGIENE
       </LogoText>
     </Root>
   );
@@ -32,6 +34,6 @@ const LogoImage = styled.div(() => [
   tw`w-[40%] h-[85%] flex justify-center items-center`,
 ]);
 
-const LogoText = styled.div(() => [
+const LogoText = styled.p(() => [
   tw`flex items-center text-[10px] md:text-[10px] xl:text-xs font-bold`,
 ]);

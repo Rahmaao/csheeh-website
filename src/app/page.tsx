@@ -77,6 +77,7 @@ export default function Home() {
                 foster holistic development for students.
               </Text>
             </WhatWeDoText>
+
             <TransparentButton>
               Learn More
               <svg
@@ -112,6 +113,7 @@ export default function Home() {
             />
           </WhatWeDoImageContainer>
         </WhatWeDo>
+
         <Grid className="relative">
           <GridItem
             headerImage={HornIcon}
@@ -150,6 +152,7 @@ export default function Home() {
 
           <Curve fillColor="#3D3F94" />
         </Grid>
+
         <GetInvolved className="relative">
           <GetInvolvedContent>
             <SectionTag tag="Get Involved" color="white" />
@@ -216,6 +219,7 @@ export default function Home() {
           }}
         >
           <DonationContent>
+            <Curve fillColor="#E6F3EE" top={true} />
             <DonationContentHeader className={recoletaLocalFont.className}>
               Every contribution counts and helps us sustain our initiatives.
             </DonationContentHeader>

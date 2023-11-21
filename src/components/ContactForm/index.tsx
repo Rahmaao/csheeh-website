@@ -148,14 +148,12 @@ const index = () => {
 
 export default index;
 
-const Root = styled.div(() => [tw`w-full h-[100vh]`, css``]);
+const Root = styled.div(() => [tw`w-full`]);
 
 const Card = styled.div(() => [
   tw`w-[80%] relative top-[-150px] lg:top-[-120px] md:w-[75%] lg:w-[713px] bg-[#ffff] py-[20px] lg:py-[50px] drop-shadow-md rounded-lg`,
-  css``,
 ]);
 
 const ContactSection = styled.div(() => [
-  tw`flex flex-col justify-center items-center`,
-  css`get-involved-section`,
+  tw`flex flex-col justify-center items-center`
 ]);
