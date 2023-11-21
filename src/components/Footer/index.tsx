@@ -10,7 +10,7 @@ import Image from "next/image";
 import { nunitoFont } from "@/app/fonts";
 import { openSansFont } from "@/app/fonts";
 import tw, { styled, css } from "twin.macro";
-import Logo from "@/components/Logo" 
+import Logo from "@/components/Logo";
 
 const index = () => {
   return (
@@ -18,9 +18,9 @@ const index = () => {
       <div className="main-footer grid md:grid-cols-2">
         <div className="card footer-section1 flex justify-center h-full">
           <div className="footer-content1 flex flex-col justify-evenly">
-          <div className="footer-logo w-[50%] h-[33%]">
-            <Logo/>
-            </div>            
+            <div className="footer-logo w-[50%] h-[33%]">
+              <Logo />
+            </div>
             <div className="footer-component2 flex">
               <div className="icon-img">
                 <div className="img-icon">
@@ -43,7 +43,9 @@ const index = () => {
                 </div>
               </div>
               <div className="text-content">
-                <p className="text3 text-[8px] md:text-[10px] lg:text-xs">info@csheehnigeria.org</p>
+                <p className="text3 text-[8px] md:text-[10px] lg:text-xs">
+                  info@csheehnigeria.org
+                </p>
               </div>
             </div>
             <div className="footer-component4 flex">
@@ -90,7 +92,9 @@ const index = () => {
 
       <Copyright className={nunitoFont.className}>
         <hr className="h-[0.2px] w-[95%] mx-auto mt-3 border-0 bg-[#a3a3a343]" />
-        <p className="text-[7px] md:text-[10px] font-thin tracking-wide">Copyright © CSHEEH 2023. All rights reserved.</p>
+        <p className="text-[7px] md:text-[10px] font-thin tracking-wide">
+          Copyright © CSHEEH 2023. All rights reserved.
+        </p>
       </Copyright>
     </Root>
   );
@@ -103,7 +107,7 @@ const Root = styled.div(() => [
   css`footer-div`,
 ]);
 
-const Copyright = styled.div(() => [tw`flex flex-col justify-evenly items-center w-full h-[20%] text-gray-300`, css``]);
-
-
-
+const Copyright = styled.div(() => [
+  tw`flex flex-col justify-evenly items-center w-full h-[20%] text-gray`,
+  css``,
+]);

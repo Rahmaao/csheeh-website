@@ -9,7 +9,7 @@ const CardItem = ({
   headerText,
   content,
 }: {
-  headerImage: string | StaticImport;
+  headerImage: StaticImport;
   headerText: string;
   content: string;
 }) => {

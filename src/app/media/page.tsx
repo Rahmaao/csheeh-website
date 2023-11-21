@@ -8,6 +8,7 @@ import PageHero from "@/components/PageHero";
 import tw, { styled } from "twin.macro";
 import SubHeader from "@/components/Typography/SubHeader";
 import Text from "@/components/Typography/Text";
+import Curve from "@/components/Curve";
 
 const Media = () => {
   return (
@@ -24,7 +25,7 @@ const Media = () => {
           offering insights, updates, and success stories.
         </Text>
       </MediaHeader>
-      <MediaGrid>
+      <MediaGrid className="relative">
         <MediaCard
           mediaHeader="NGO Donates Handwashing Facilities to FCT School"
           image={tapsImg}
@@ -79,6 +80,7 @@ const Media = () => {
           linkAddress={""}
           date="OCTOBER 21, 2023"
         />
+        <Curve fillColor="#030426" />
       </MediaGrid>
     </Root>
   );
@@ -86,7 +88,8 @@ const Media = () => {
 
 const Root = styled.div(() => [tw``]);
 const MediaGrid = styled.div(() => [
-  tw`w-full grid gap-y-[67px] grid-cols-1 md:grid-cols-2 md:px-8 lg:grid-cols-3 lg:gap-x-12`,
+  // tw`w-full grid gap-y-[67px] grid-cols-1 md:grid-cols-2 md:px-8 lg:grid-cols-3 lg:gap-x-12`,
+  tw`w-full grid gap-y-[67px] grid-cols-1 md:grid-cols-2 md:px-8 lg:grid-cols-3 lg:gap-12 pb-[150px]`,
 ]);
 
 const MediaHeader = styled.div(() => [
