@@ -3,7 +3,7 @@ import React from "react";
 import tw, { styled } from "twin.macro";
 
 const Text = ({ children }: { children: React.ReactNode }) => {
-  return <Root className={nunitoFont.className}>{children}</Root>;
+  return <Root>{children}</Root>;
 };
 
 export default Text;

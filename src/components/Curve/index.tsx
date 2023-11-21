@@ -2,13 +2,13 @@ import React from "react";
 import tw, { styled, css } from "twin.macro";
 
 interface ICurveProps {
-  //   children: React.ReactNode;
+  top?: boolean;
   fillColor: string;
 }
 
-const index: React.FC<ICurveProps> = ({ fillColor }: ICurveProps) => {
+const index: React.FC<ICurveProps> = ({ fillColor, top }: ICurveProps) => {
   return (
-    <Curve>
+    <Curve $topVariant={top}>
       <Svg
         className="rotate-y-180"
         xmlns="http://www.w3.org/2000/svg"
@@ -25,8 +25,9 @@ const index: React.FC<ICurveProps> = ({ fillColor }: ICurveProps) => {
   );
 };
 
-const Curve = styled.div(() => [
-  tw`absolute bottom-0 left-0 w-full overflow-hidden leading-[0px] transform rotate-180`,
+const Curve = styled.div<{ $topVariant?: boolean }>(({ $topVariant }) => [
+  tw`absolute left-0 w-full overflow-hidden leading-[0px] `,
+  $topVariant ? tw`top-0` : tw`transform rotate-180 bottom-0 `,
 ]);
 
 const Svg = styled.svg(() => [

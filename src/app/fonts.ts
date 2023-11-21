@@ -4,6 +4,7 @@ import LocalFont from "next/font/local";
 export const interFont = Inter({ subsets: ["latin"] });
 export const openSansFont = Open_Sans({ subsets: ["latin"] });
 export const nunitoFont = Nunito({ subsets: ["cyrillic"] });
+
 export const recoletaLocalFont = LocalFont({
   src: [
     {
@@ -13,6 +14,7 @@ export const recoletaLocalFont = LocalFont({
     },
   ],
 });
+
 export const recoletasemiboldLocalFont = LocalFont({
   src: [
     {
@@ -22,6 +24,7 @@ export const recoletasemiboldLocalFont = LocalFont({
     },
   ],
 });
+
 export const recoletaboldLocalFont = LocalFont({
   src: [
     {

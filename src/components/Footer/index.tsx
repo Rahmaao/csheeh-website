@@ -92,7 +92,7 @@ const index = () => {
 
       <Copyright className={nunitoFont.className}>
         <hr className="h-[0.2px] w-[95%] mx-auto mt-3 border-0 bg-[#a3a3a343]" />
-        <p className="text-[7px] md:text-[10px] font-thin tracking-wide">
+        <p className="text-[7px] md:text-[10px] font-thin tracking-wide text-white">
           Copyright © CSHEEH 2023. All rights reserved.
         </p>
       </Copyright>

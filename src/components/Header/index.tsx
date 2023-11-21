@@ -55,7 +55,11 @@ const LayoutHeader = () => {
         <Link href="/">
           <Logo>
             <Image src={LogoImage} alt="logo" width={71} height={78.65} />
-            <LogoText className={openSansFont.className}>
+            <LogoText
+              css={{
+                fontFamily: "Open Sans",
+              }}
+            >
               CENTRE FOR SCHOOL HEALTH EDUCATION AND ENVIRONMENTAL HYGIENE
             </LogoText>
           </Logo>
@@ -82,7 +86,11 @@ const LayoutHeader = () => {
         <Link href="/">
           <Logo>
             <Image src={LogoImage} alt="logo" height={38.65} />
-            <MobileLogoText className={`${openSansFont.className}`}>
+            <MobileLogoText
+              css={{
+                fontFamily: "Open Sans",
+              }}
+            >
               CENTRE FOR SCHOOL HEALTH EDUCATION AND ENVIRONMENTAL HYGIENE
             </MobileLogoText>
           </Logo>

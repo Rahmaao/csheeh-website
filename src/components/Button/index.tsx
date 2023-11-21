@@ -5,11 +5,7 @@ import { Nunito } from "next/font/google";
 const nunitoFont = Nunito({ subsets: ["latin"] });
 
 const Button = ({ children }: { children: React.ReactNode }) => {
-  return (
-    <Root type="button" className={nunitoFont.className}>
-      {children}
-    </Root>
-  );
+  return <Root type="button">{children}</Root>;
 };
 
 export default Button;
