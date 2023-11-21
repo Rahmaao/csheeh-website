@@ -1,21 +1,22 @@
 "use client";
-import Location from "@/assets/icons/Location.svg";
-import Message from "@/assets/icons/Message.svg";
-import facebook from "@/assets/icons/facebook.svg";
-import instagram from "@/assets/icons/instagram.svg";
-import phone from "@/assets/icons/phone.svg";
+import Location1 from "@/assets/icons/Location1.svg";
+import Messaging from "@/assets/icons/Messaging.svg";
+import FB from "@/assets/icons/FB.svg";
+import IG from "@/assets/icons/IG.svg";
+import phone1 from "@/assets/icons/phone1.svg";
 import SectionTag from "@/components/SectionTag/index";
 import Image from "next/image";
 import tw, { css, styled } from "twin.macro";
 import SmallButton from "../SmallButton";
+import Curve from "@/components/Curve";
 
 const index = () => {
   return (
     <Root>
       <ContactSection>
         <Card>
-          <div className="py-8 lg:py-16 px-10 mx-auto max-w-screen-md">
-            <form action="#" className="space-y-8">
+          <div className="h-[100%] flex flex-col justify-center px-10 mx-auto max-w-screen-md">
+            <form action="#" className="space-y-6">
               <div>
                 <label className="block mb-2 text-sm font-medium text-[#333333]">
                   Name <span className="required-fields text-[red]">*</span>
@@ -74,19 +75,19 @@ const index = () => {
           </div>
         </Card>
       </ContactSection>
-      <section className="h-[500px] w-full flex justify-center items-center">
-        <div className=" h-[70%] md:h-[60%] w-[80%] drop-shadow-[0px_2px_35px_0px_#3437CE80] bg-[#3D3F94] rounded-[13px] mt-20 flex flex-col md:flex-row justify-center items-center">
+      <section className="relative h-[500px] md:h-[400px] w-full flex justify-center items-start">
+        <div className="h-[70%] md:h-[234px] lg:h-[234px] xl:h-[234px] w-[90%] xl:w-[80%] drop-shadow-[0px_2px_35px_0px_#3437CE80] bg-[#3D3F94] rounded-[13px] flex flex-col md:flex-row justify-center items-center">
           <div className="h-[100%] w-[90%] md:w-[60%] flex flex-col justify-center items-center">
             <div className="h-[20%] w-[90%] flex justify-between">
               <SectionTag color="#ffffff" tag="VISIT OUR OFFICE" />
             </div>
-            <div className="flex h-[50%] w-[90%]">
-              <div className="w-[30px]">
-                <div className="w-[50%]">
-                  <Image src={Location} alt="Location" className="icon-1" />
+            <div className="flex h-[94px] w-[100%] md:w-[90%]">
+              <div className="md:w-[30px] w-[20%] md:pt-0 pt-1">
+                <div className="w-[80%]">
+                  <Image src={Location1} alt="Location" className="icon-1" />
                 </div>
               </div>
-              <div className="text-content ">
+              <div className="flex items-start pt-1">
                 <p className="text2 text-[#ffff] text-[10px] md:text-[10px] lg:text-[15px] leading-6">
                   <span className=" md:block">
                     Centre for School Health Education and Environmental Hygiene{" "}
@@ -105,11 +106,11 @@ const index = () => {
             <div className="h-[20%] w-full flex items-center">
               <SectionTag color="#ffffff" tag="CONTACT US DIGITALLY" />
             </div>
-            <div className="flex h-[50%] flex-col justify-between">
+            <div className="flex h-[94px] flex-col justify-between">
               <div className="h-[30%] w-[90%] flex">
                 <div className="w-[30px] h-[20px] flex justify-center items-center">
                   <div className="w-[60%]">
-                    <Image src={Message} alt="Message" className="icon-1" />
+                    <Image src={Messaging} alt="Message" className="icon-1" />
                   </div>
                 </div>
                 <div className="text-content">
@@ -121,7 +122,7 @@ const index = () => {
               <div className="h-[30%] w-[90%] flex">
                 <div className="w-[30px] h-[20px] flex justify-center items-center">
                   <div className="w-[60%]">
-                    <Image src={phone} alt="phone" className="icon-1" />
+                    <Image src={phone1} alt="phone" className="icon-1" />
                   </div>
                 </div>
                 <div className="text-content">
@@ -130,17 +131,18 @@ const index = () => {
                   </p>
                 </div>
               </div>
-              <div className="h-[22%] w-full md:w-[25%] flex justify-center md:justify-start items-center">
-                <div className="logo-img1">
-                  <Image src={facebook} alt="facebook" className="icon-1" />
+              <div className="h-[22%] w-[25%] flex justify-start items-center">
+                <div className="logo-img1 w-[35%]">
+                  <Image src={FB} alt="facebook" className="icon-1" />
                 </div>
-                <div className="logo-img1">
-                  <Image src={instagram} alt="instagram" className="icon-1" />
+                <div className="logo-img1 w-[35%]">
+                  <Image src={IG} alt="instagram" className="icon-1" />
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <Curve fillColor="#030426" />
       </section>
     </Root>
   );
@@ -151,10 +153,9 @@ export default index;
 const Root = styled.div(() => [tw`w-full`]);
 
 const Card = styled.div(() => [
-  tw`w-[80%] mt-12 md:mt-0 md:w-[75%] lg:w-[50%] h-[720px] md:h-[680px] bg-[#ffff] drop-shadow-md rounded-lg`,
-  ,
+  tw`w-[80%] relative top-[-150px] lg:top-[-120px] md:w-[75%] lg:w-[713px] bg-[#ffff] py-[20px] lg:py-[50px] drop-shadow-md rounded-lg`,
 ]);
 
 const ContactSection = styled.div(() => [
-  tw`bg-[#ffff] md:h-[50vh] lg:h-[80vh] flex flex-col justify-center items-center`,
+  tw`flex flex-col justify-center items-center`
 ]);

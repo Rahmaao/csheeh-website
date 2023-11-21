@@ -4,10 +4,21 @@ import AdvocacyIcon from "@/assets/icons/advocacy.svg";
 import CapacityIcon from "@/assets/icons/building.svg";
 import HornIcon from "@/assets/icons/horn.svg";
 import MedicalIcon from "@/assets/icons/medical-outrages.svg";
+import MediaCard1 from "@/components/TeamCards";
 import PromotingIcon from "@/assets/icons/promoting.svg";
 import ReserachIcon from "@/assets/icons/research.svg";
 import AboutUsImg from "@/assets/images/about-us.png";
 import MissionImg from "@/assets/images/get-involved.png";
+import tapsImg from "@/assets/images/taps.png";
+import avatar from "@/assets/images/Avatar.png";
+import team1 from "@/assets/images/Team1.png";
+import team2 from "@/assets/images/Team2.png";
+import team3 from "@/assets/images/Team3.png";
+import team4 from "@/assets/images/Team4.png";
+import team5 from "@/assets/images/Team5.png";
+import team6 from "@/assets/images/Team6.png";
+import team7 from "@/assets/images/Team7.png";
+import team8 from "@/assets/images/Team8.png";
 import GridItem from "@/components/GridItem";
 import PageHero from "@/components/PageHero";
 import SectionTag from "@/components/SectionTag";
@@ -15,7 +26,7 @@ import SubHeader from "@/components/Typography/SubHeader";
 import Text from "@/components/Typography/Text";
 import Image from "next/image";
 import tw, { styled } from "twin.macro";
-import { recoletaLocalFont, recoletasemiboldLocalFont } from "../fonts";
+import { nunitoFont, recoletaLocalFont, recoletasemiboldLocalFont } from "../fonts";
 import Curve from "@/components/Curve";
 
 export default function Home() {
@@ -26,9 +37,9 @@ export default function Home() {
         subHeader="Learn more about our mission and values, and meet the people that drive us forward."
         image={AboutUsImg}
       />
-      <AboutContentContainer className="mt-[150px]">
+      <AboutContentContainer className="mt-[67px]">
         <AboutContentContainerLeft>
-          <SubHeader>Healthy Schools, Safe Environment! 🌍</SubHeader>
+          <SubHeader>Healthy Schools, <br /> Safe Environment! 🌍</SubHeader>
         </AboutContentContainerLeft>
         <AboutContentContainerRight>
           <Text>
@@ -47,7 +58,7 @@ export default function Home() {
           </Text>
         </AboutContentContainerRight>
       </AboutContentContainer>
-      <AboutContentContainer className="my-[50px] lg:mt-0">
+      <AboutContentContainer className="my-[50px] lg:mt-[103px]">
         <AboutContentContainerLeft>
           <AboutImageContainer>
             <Image
@@ -135,8 +146,80 @@ export default function Home() {
 
         <Curve fillColor="#3D3F94" />
       </Grid>
-      <Team>
-        <SectionTag tag="Meet our mangement team" color="#fff" />d
+      <Team className="relative">
+        <SectionTag tag="Meet our mangement team" color="#fff" />
+        <GetInvolvedContentHeader className={recoletaLocalFont.className}>
+          Board of Directors
+        </GetInvolvedContentHeader>
+        <GetInvolvedContentBody className={nunitoFont.className}>
+          Meet our distinguished Board of Directors, a group of accomplished
+          individuals dedicated to guiding our organization towards success and
+          innovation.
+        </GetInvolvedContentBody>
+        <MediaGrid>
+          <MediaCard1
+            mediaHeader="Dr. (Mrs.) Folasade O. Momoh"
+            image={team1}
+            subheader="Executive Director & Founder"
+          />
+          <MediaCard1
+            mediaHeader="Mrs. Grace B. Emoefe"
+            image={team2}
+            subheader="Board Chairman"
+          />
+          <MediaCard1
+            mediaHeader="Mr. Jirai Istifanus Crown"
+            image={team3}
+            subheader="Board Member"
+          />
+          <MediaCard1
+            mediaHeader="Mrs. Ruth Fatigun"
+            image={team4}
+            subheader="Board Member"
+          />
+          <MediaCard1
+            mediaHeader="Dr. Olubunmi Adeyemi"
+            image={avatar}
+            subheader="Board Member"
+          />
+          <MediaCard1
+            mediaHeader="Mr. Ben Enwerem"
+            image={avatar}
+            subheader="Board Member"
+          />
+          <MediaCard1
+            mediaHeader="Dr. Dele Babade, mni"
+            image={team5}
+            subheader="Board Member"
+          />
+          <MediaCard1
+            mediaHeader="Dr. Anne Ebri"
+            image={team6}
+            subheader="Board Member"
+          />
+          <MediaCard1
+            mediaHeader="Barr. (Mrs.) Mary-Anne  Momoh-Ige"
+            image={team7}
+            subheader="Legal Adviser"
+          />
+          <MediaCard1
+            mediaHeader="Dr. Adedayo Adeyemi"
+            image={avatar}
+            subheader="Technical Adviser"
+          />
+          <MediaCard1
+            mediaHeader="Dr. Uzoamaka C. Chimah"
+            image={team8}
+            subheader="Technical Adviser"
+          />
+          <MediaCard1
+            mediaHeader="Mrs. Kulu Labaran"
+            image={avatar}
+            subheader="Technical Adviser"
+          />
+          
+        </MediaGrid>
+        <Curve fillColor="#030426" />
       </Team>
     </Root>
   );
@@ -149,7 +232,7 @@ const WhatWeDoContainer = styled.div(() => [
 ]);
 
 const AboutContentContainer = styled.div(() => [
-  tw`w-full px-[50px] lg:px-[80px] lg:mt-[150px] flex flex-col lg:flex-row lg:gap-[52px] gap-[30px]`,
+  tw`w-full px-[50px] lg:px-[80px] flex flex-col lg:flex-row lg:gap-[52px] gap-[30px]`,
 ]);
 
 const AboutContentContainerLeft = styled.div(() => [
@@ -186,4 +269,20 @@ const Grid = styled.div(() => [
 
 const Team = styled.div(() => [
   tw`w-full bg-dark-blue py-[50px] lg:py-[90px] px-[50px] lg:px-[80px]`,
+]);
+
+const MediaGrid = styled.div(() => [
+  tw`w-full grid gap-y-[80px] grid-cols-1 md:grid-cols-2 py-[78px] lg:grid-cols-4`,
+]);
+
+const mediaHeader = styled.div(() => [
+  tw`w-full mt-[120px] mb-[80px] px-[40px] lg:px-[80px] lg:w-[700px]`,
+]);
+
+const GetInvolvedContentHeader = styled.h2(() => [
+  tw`text-[#ffff] text-[30px] lg:text-[35px] pt-[11px] leading-[42.03px] text-left`,
+]);
+
+const GetInvolvedContentBody = styled.p(() => [
+  tw`text-[#ffff] md:w-[70%] text-[15px] lg:text-[18px] font-[400] leading-[25px] lg:leading-[30px] pt-[12px]`,
 ]);

@@ -15,10 +15,10 @@ import Logo from "@/components/Logo";
 const index = () => {
   return (
     <Root className={nunitoFont.className}>
-      <div className="main-footer grid md:grid-cols-2">
-        <div className="card footer-section1 flex justify-center h-full">
-          <div className="footer-content1 flex flex-col justify-evenly">
-            <div className="footer-logo w-[50%] h-[33%]">
+      <div className="main-footer grid md:grid-cols-2 pt-7 md:pt-0">
+        <div className=" card footer-section1 flex justify-center h-full">
+          <div className="pb-6 md:pb-0 footer-content1 flex flex-col justify-around">
+            <div className="footer-logo w-[50%] h-[33%] pb-3 md:pb-0">
               <Logo />
             </div>
             <div className="footer-component2 flex">
@@ -27,12 +27,11 @@ const index = () => {
                   <Image src={Location} alt="Location" className="icon-1" />
                 </div>
               </div>
-              <div className="text-content">
-                <p className="text2 text-[8px] md:text-[10px] lg:text-xs">
-                  Centre for School Health Education and Environmental Hygiene
-                  (CSHEEH) <br />
-                  Sentosa Park, Near Fire Service, Zone A 1st Gate, Legislative
-                  Quarters, <br /> Apo, Abuja.
+              <div className="text-content w-[95%] lg:w-[430px]">
+                <p className="text2 text-[10px] lg:text-[14px] lg:text-xs">
+                    Centre for School Health Education and Environmental Hygiene (CSHEEH) 
+                    Sentosa Park, Near Fire Service, Zone A 1st Gate,
+                    Legislative Quarters, Apo, Abuja. 
                 </p>
               </div>
             </div>
@@ -43,7 +42,7 @@ const index = () => {
                 </div>
               </div>
               <div className="text-content">
-                <p className="text3 text-[8px] md:text-[10px] lg:text-xs">
+                <p className="text3 text-[10px] lg:text-xs">
                   info@csheehnigeria.org
                 </p>
               </div>
@@ -55,7 +54,7 @@ const index = () => {
                 </div>
               </div>
               <div className="text-content">
-                <p className="text3 text-[8px] md:text-[10px] lg:text-xs">
+                <p className="text3 text-[10px] lg:text-xs">
                   +234 803 787 1487; +234 805 356 3370
                 </p>
               </div>
@@ -63,8 +62,8 @@ const index = () => {
           </div>
         </div>
         <div className="card footer-section2 flex justify-center items-center md:h-full">
-          <div className="footer-content2 flex flex-col items-center md:items-end justify-around md:justify-between">
-            <div className="footer-component5 flex justify-between">
+          <div className="w-[90%] h-[100%] pt-0 md:pt-[15px] flex flex-col items-center md:items-end justify-between">
+            <div className="w-full md:w-[80%] pb-2 md:pb-0 footer-component5 flex justify-between">
               <div className="footer-nav-items">
                 <a href="">ABOUT US</a>
               </div>
@@ -78,11 +77,11 @@ const index = () => {
                 <a href="">CONTACT US</a>
               </div>
             </div>
-            <div className="footer-component6 flex justify-between items-center">
-              <div className="logo-img1">
+            <div className="w-[70px] md:w-[20%] h-[20px] md:h-[35%] flex justify-between items-center">
+              <div className="logo-img1 w-[50%] md:w-[35%]">
                 <Image src={facebook} alt="facebook" className="icon-1" />
               </div>
-              <div className="logo-img1">
+              <div className="logo-img1 w-[50%] md:w-[35%]">
                 <Image src={instagram} alt="instagram" className="icon-1" />
               </div>
             </div>

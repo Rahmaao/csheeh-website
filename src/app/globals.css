@@ -61,15 +61,10 @@
 
 .footer-component5 {
   /* background-color: forestgreen; */
-  width: 80%;
+  /* width: 80%; */
   height: 20%;
 }
 
-.footer-component6 {
-  /* background-color: tomato; */
-  width: 10%;
-  height: 15%;
-}
 
 .logo-img {
   /* background-color: #2e8b57; */
@@ -91,19 +86,17 @@
 }
 
 .text-content {
-  /* background-color: turquoise; */
-  width: 95%;
   height: 100%;
 }
 
 .logo-img1 {
   /* background-color: steelblue; */
-  width: 35%;
+  /* width: 35%; */
   height: 100%;
 }
 
 .footer-nav-items {
-  @apply flex justify-center items-center text-[8px] lg:text-[12px];
+  @apply flex justify-center items-center text-[10px] lg:text-[12px];
   /* background-color: sienna; */
   /* width: 23%; */
   height: 100%;
@@ -147,11 +140,6 @@
     padding-top: 15px;
   }
 
-  .footer-component6 {
-    /* background-color: tomato; */
-    width: 20%;
-    height: 35%;
-  }
 
   .icon-img {
     /* background-color: yellow; */
@@ -228,3 +216,60 @@
   background-color: rebeccapurple;
   transform: translateX(100%);
 }
+
+.curve {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.curve svg {
+  position: relative;
+  display: block;
+  width: calc(137% + 1.3px);
+  height: 93px;
+  transform: rotateY(180deg);
+}
+
+.curve .shape-fill {
+  fill: #e6f3ee;
+}
+
+.top-curve {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  border: transparent;
+  outline: transparent;
+  stroke: none;
+}
+
+.top-curve svg {
+  position: relative;
+  display: block;
+  width: calc(137% + 1.5px);
+  height: 70px;
+  transform: rotateY(180deg);
+  stroke: transparent;
+  stroke-width: 10 px;
+  stroke: tomato;
+}
+
+.top-curve .shape-fill__white {
+  fill: #ffffff;
+  stroke: none;
+}
+
+
+
+
+  
+

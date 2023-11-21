@@ -11,6 +11,8 @@ import ReserachIcon from "@/assets/icons/research.svg";
 import DonateImg from "@/assets/images/donate.png";
 import GetInvolvedImg from "@/assets/images/get-involved.png";
 import handwashing from "@/assets/images/handwashing.png";
+import taps from "@/assets/images/taps.png";
+import pads from "@/assets/images/pads.png";
 import HeroBg from "@/assets/images/hero-bg.png";
 import WhatWeDoImage from "@/assets/images/what-we-do.png";
 import Button from "@/components/Button";
@@ -185,26 +187,26 @@ export default function Home() {
         <LatestArticles className="relative">
           <SectionTag tag="Latest Articles" color="#058A51" />
           <MediaText1 className={recoletasemiboldLocalFont.className}>
-            <Link href="/media#news"> News, Press + Featured Articles</Link>
+            <Link href="/media"> News, Press + Featured Articles</Link>
           </MediaText1>
           <div className="w-full grid grid-cols-1 h-auto lg:grid-cols-3 justify-between">
             <MediaCard
-              image={handwashing}
+              image={taps}
               mediaHeader="NGO Donates Handwashing Facilities To FCT School"
               date="OCTOBER 21, 2023"
-              linkAddress="https://www.google.com"
+              linkAddress="https://www.abujadigest.info/stories/education/ngo-donates-handwashing-facilities-to-fct-school/"
             />
             <MediaCard
               image={handwashing}
-              mediaHeader="NGO Donates Handwashing Facilities To FCT School"
-              date="OCTOBER 21, 2023"
-              linkAddress="https://www.google.com"
+              mediaHeader="Organisation calls for coordinated efforts in pursuit of universal hand hygiene"
+              date="OCTOBER 19, 2023"
+              linkAddress="https://nannews.ng/2023/10/19/organisation-calls-for-coordinated-efforts-in-pursuit-of-universal-hand-hygiene/"
             />
             <MediaCard
-              image={handwashing}
-              mediaHeader="NGO Donates Handwashing Facilities To FCT School"
-              date="OCTOBER 21, 2023"
-              linkAddress="https://www.google.com"
+              image={pads}
+              mediaHeader="World Menstrual Hygiene Day: Stakeholders Call for Early Pre-menstrual Counseling"
+              date="MAY 30, 2023"
+              linkAddress="https://www.abujadigest.info/stories/health/world-menstrual-hygiene-day-stakeholders-call-for-early-pre-menstrual-counseling/"
             />
           </div>
         </LatestArticles>
@@ -259,7 +261,7 @@ const MainContent = styled.div(() => [
 ]);
 
 const WhatWeDo = styled.div(() => [
-  tw`w-full px-[40px] lg:px-[80px] flex flex-col lg:flex-row lg:items-center items-center lg:justify-between sm:justify-center gap-[40px] lg:gap-[0px]`,
+  tw`w-full px-[40px] lg:px-[80px] pb-[87px] flex flex-col lg:flex-row lg:items-center items-center lg:justify-between sm:justify-center gap-[40px] lg:gap-[0px]`,
 ]);
 
 const WhatWeDoContent = styled.div(() => [
@@ -275,7 +277,7 @@ const WhatWeDoText = styled.div(() => [
 ]);
 
 const WhatWeDoImageContainer = styled.div(() => [
-  tw`h-[250px] w-[300px] sm:h-[450px] sm:w-[500px]  md:h-[650px] md:w-[700px] flex justify-center items-center`,
+  tw`h-auto w-[300px] sm:w-[500px] md:w-[700px] flex justify-center items-start`,
 ]);
 
 const Grid = styled.div(() => [
@@ -327,7 +329,7 @@ const GetInvolvedImageContainer = styled.div(() => [
 ]);
 
 const LatestArticles = styled.div(() => [
-  tw`w-full bg-lime px-[40px] lg:pt-[250px] lg:pb-[20px] h-auto py-[50px]`,
+  tw`w-full bg-lime px-[40px] lg:pb-[123px] h-auto py-[50px]`,
 ]);
 
 const Donation = styled.div(() => [

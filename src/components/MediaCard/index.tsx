@@ -37,7 +37,7 @@ const MediaCard = ({
 };
 
 const Root = styled.a(() => [
-  tw`h-[397px] w-[full] flex flex-col items-center`,
+  tw`w-[full] flex flex-col items-center`,
 ]);
 
 const ImgContainer = styled.div(() => [
