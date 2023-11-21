@@ -329,7 +329,7 @@ const GetInvolvedImageContainer = styled.div(() => [
 ]);
 
 const LatestArticles = styled.div(() => [
-  tw`w-full bg-lime px-[40px] lg:pb-[20px] h-auto py-[50px]`,
+  tw`w-full bg-lime px-[40px] lg:pb-[123px] h-auto py-[50px]`,
 ]);
 
 const Donation = styled.div(() => [

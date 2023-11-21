@@ -8,6 +8,7 @@ import SectionTag from "@/components/SectionTag/index";
 import Image from "next/image";
 import tw, { css, styled } from "twin.macro";
 import SmallButton from "../SmallButton";
+import Curve from "@/components/Curve";
 
 const index = () => {
   return (
@@ -74,8 +75,8 @@ const index = () => {
           </div>
         </Card>
       </ContactSection>
-      <section className="bg-[purple] h-[500px] w-full flex justify-center items-start">
-        <div className=" h-[70%] md:h-[45%] w-[80%] drop-shadow-[0px_2px_35px_0px_#3437CE80] bg-[#3D3F94] rounded-[13px] flex flex-col md:flex-row justify-center items-center">
+      <section className="relative h-[500px] md:h-[400px] w-full flex justify-center items-start">
+        <div className="h-[70%] md:h-[234px] lg:h-[234px] xl:h-[234px] w-[90%] xl:w-[80%] drop-shadow-[0px_2px_35px_0px_#3437CE80] bg-[#3D3F94] rounded-[13px] flex flex-col md:flex-row justify-center items-center">
           <div className="h-[100%] w-[90%] md:w-[60%] flex flex-col justify-center items-center">
             <div className="h-[20%] w-[90%] flex justify-between">
               <SectionTag color="#ffffff" tag="VISIT OUR OFFICE" />
@@ -131,16 +132,17 @@ const index = () => {
                 </div>
               </div>
               <div className="h-[22%] w-[25%] flex justify-start items-center">
-                <div className="logo-img1">
+                <div className="logo-img1 w-[35%]">
                   <Image src={FB} alt="facebook" className="icon-1" />
                 </div>
-                <div className="logo-img1">
+                <div className="logo-img1 w-[35%]">
                   <Image src={IG} alt="instagram" className="icon-1" />
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <Curve fillColor="#030426" />
       </section>
     </Root>
   );

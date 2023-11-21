@@ -10,11 +10,12 @@ import { recoletaboldLocalFont } from "@/app/fonts";
 import HeartIcon from "@/assets/icons/Heart.svg";
 import ButtonImage from "@/components/Button/ButtonImage";
 import Image from "next/image";
+import Curve from "@/components/Curve";
 
 const index = () => {
   return (
     <Root>
-      <GetInvolvedSection>
+      <GetInvolvedSection className="pt-12">
         <Card>
           <div className="get-involved-text flex flex-col md:justify-evenly md:items-start items-center w-[100%] h-[60%] md:w-[60%] md:h-[90%]">
             <div className="get-involved-text1 w-[85%] md:w-[70%] h-[12%] md:h-[20%] flex items-center md:items-end md:justify-start justify-center">
@@ -32,7 +33,7 @@ const index = () => {
                 this meaningful journey of transformation, and together, we can
                 build a healthier, safer, and more vibrant world for all.</Text>
             </div>
-            <div className="get-involved-btn w-[45%] md:w-[30%] md:h-[20%] h-[24%] flex md:justify-start justify-center items-end md:items-center">
+            <div className="get-involved-btn py-4 md:py-0 w-[45%] md:w-[30%] md:h-[20%] h-[24%] flex md:justify-start justify-center items-end md:items-center">
               <SmallButton>
                 <ButtonImage src={HeartIcon} alt="heart" />
                 Donate Now
@@ -50,8 +51,9 @@ const index = () => {
           </div>
         </Card>
       </GetInvolvedSection>
-      <GetInvolvedSection>
-        <div className="w-[85%] h-[480px] md:h-[50%] lg:h-[70%] flex md:flex-row md:justify-between flex-col justify-center items-center">
+      <GetInvolvedSection className="pt-16">
+      <Card>
+        <div className="w-[100%] h-[480px] md:h-[50%] lg:h-[70%] flex md:flex-row md:justify-between flex-col justify-center items-center">
           <div className="get-involved-img h-[204.2px] w-[80%] md:w-[40%] md:h-full flex justify-center items-end md:items-center ">
             <GetInvolvedImage>
               <Image
@@ -78,13 +80,14 @@ const index = () => {
                 We look forward to hearing from you.
               </Text>
             </div>
-            <div className="get-involved-btn w-[45%] md:w-[30%] md:h-[20%] h-[72px] flex md:justify-start justify-center items-end md:items-center">
+            <div className="get-involved-btn pt-4 lg:pt-0 w-[45%] md:w-[30%] md:h-[20%] h-[72px] flex md:justify-start justify-center items-end md:items-center">
               <SmallButton>Apply Now</SmallButton>
             </div>
           </div>
         </div>
+        </Card>
       </GetInvolvedSection>
-      <GetInvolvedSection>
+      <GetInvolvedSection className="pt-8 relative pb-[60px] lg:pb-[120px]">
         <Card>
           <div className="get-involved-text flex flex-col md:justify-evenly md:items-start items-center w-[100%] h-[60%] md:w-[60%] md:h-[90%]">
             <div className="get-involved-text1 w-[85%] md:w-[70%] h-[12%] md:h-[20%] flex items-center md:items-end md:justify-start justify-center">
@@ -105,7 +108,7 @@ const index = () => {
                 objectives and account will be given where necessary.
               </Text>
             </div>
-            <div className="get-involved-btn w-[45%] md:w-[30%] md:h-[20%] h-[24%] flex md:justify-start justify-center items-end md:items-center">
+            <div className="get-involved-btn pt-4 w-[45%] md:w-[30%] md:h-[20%] h-[24%] flex md:justify-start justify-center items-end md:items-center">
               <SmallButton>Contact Us</SmallButton>
             </div>
           </div>
@@ -119,6 +122,7 @@ const index = () => {
             </GetInvolvedImage>
           </div>
         </Card>
+        <Curve fillColor="#030426" />
       </GetInvolvedSection>
     </Root>
   );
@@ -126,20 +130,20 @@ const index = () => {
 
 export default index;
 
-const Root = styled.div(() => [tw`w-full h-[100vh] bg-slate-600`, css``]);
+const Root = styled.div(() => [tw`w-full`, css``]);
 
 const Card = styled.div(() => [
-  tw`w-[85%] h-[500px] lg:w-[80%] md:h-[50%] lg:h-[70%] flex md:flex-row flex-col justify-center items-center`,
+  tw`w-[95%] h-[500px] lg:w-[80%] md:h-[50%] lg:h-[70%] flex md:flex-row flex-col justify-center items-center`,
   css``,
 ]);
 
 const GetInvolvedSection = styled.div(() => [
-  tw`bg-[#ffff] md:h-[50vh] lg:h-[100vh] flex justify-center items-center pt-12 md:pt-0`,
+  tw`bg-[#ffff] md:h-[50vh] lg:h-[100vh] flex justify-center items-center md:pt-0`,
   css`get-involved-section`,
 ]);
 
 const GetInvolvedText1 = styled.div(() => [
-  tw`text-[18px] md:text-[18px] lg:text-[27px] font-[1000] tracking-wide`,
+  tw`text-[18px] pt-5 md:text-[18px] lg:text-[27px] font-[1000] tracking-wide`,
   css``,
 ]);
 

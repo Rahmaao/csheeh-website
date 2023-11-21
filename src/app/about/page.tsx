@@ -39,7 +39,7 @@ export default function Home() {
       />
       <AboutContentContainer className="mt-[67px]">
         <AboutContentContainerLeft>
-          <SubHeader>Healthy Schools, Safe Environment! 🌍</SubHeader>
+          <SubHeader>Healthy Schools, <br /> Safe Environment! 🌍</SubHeader>
         </AboutContentContainerLeft>
         <AboutContentContainerRight>
           <Text>
@@ -146,7 +146,7 @@ export default function Home() {
 
         <Curve fillColor="#3D3F94" />
       </Grid>
-      <Team>
+      <Team className="relative">
         <SectionTag tag="Meet our mangement team" color="#fff" />
         <GetInvolvedContentHeader className={recoletaLocalFont.className}>
           Board of Directors
@@ -219,7 +219,7 @@ export default function Home() {
           />
           
         </MediaGrid>
-        
+        <Curve fillColor="#030426" />
       </Team>
     </Root>
   );
