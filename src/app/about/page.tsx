@@ -150,73 +150,61 @@ export default function Home() {
         </GetInvolvedContentBody>
         <MediaGrid>
           <MediaCard1
-            color="#fff"
             mediaHeader="NGO Donates Handwashing Facilities to FCT School"
             image={tapsImg}
             subheader="OCTOBER 21, 2023"
           />
           <MediaCard1
-            color="#fff"
             mediaHeader="NGO Donates Handwashing Facilities to FCT School"
             image={tapsImg}
             subheader="OCTOBER 21, 2023"
           />
           <MediaCard1
-            color="#fff"
             mediaHeader="NGO Donates Handwashing Facilities to FCT School"
             image={tapsImg}
             subheader="OCTOBER 21, 2023"
           />
           <MediaCard1
-            color="#fff"
             mediaHeader="NGO Donates Handwashing Facilities to FCT School"
             image={tapsImg}
             subheader="OCTOBER 21, 2023"
           />
           <MediaCard1
-            color="#fff"
             mediaHeader="NGO Donates Handwashing Facilities to FCT School"
             image={tapsImg}
             subheader="OCTOBER 21, 2023"
           />
           <MediaCard1
-            color="#fff"
             mediaHeader="NGO Donates Handwashing Facilities to FCT School"
             image={tapsImg}
             subheader="OCTOBER 21, 2023"
           />
           <MediaCard1
-            color="white"
             mediaHeader="NGO Donates Handwashing Facilities to FCT School"
             image={tapsImg}
             subheader="OCTOBER 21, 2023"
           />
           <MediaCard1
-            color="#fff"
             mediaHeader="NGO Donates Handwashing Facilities to FCT School"
             image={tapsImg}
             subheader="OCTOBER 21, 2023"
           />
           <MediaCard1
-            color="#fff"
             mediaHeader="NGO Donates Handwashing Facilities to FCT School"
             image={tapsImg}
             subheader="OCTOBER 21, 2023"
           />
           <MediaCard1
-            color="white"
             mediaHeader="NGO Donates Handwashing Facilities to FCT School"
             image={tapsImg}
             subheader="OCTOBER 21, 2023"
           />
           <MediaCard1
-            color="#fff"
             mediaHeader="NGO Donates Handwashing Facilities to FCT School"
             image={tapsImg}
             subheader="OCTOBER 21, 2023"
           />
           <MediaCard1
-            color="#fff"
             mediaHeader="NGO Donates Handwashing Facilities to FCT School"
             image={tapsImg}
             subheader="OCTOBER 21, 2023"
@@ -274,7 +262,7 @@ const Team = styled.div(() => [
 ]);
 
 const MediaGrid = styled.div(() => [
-  tw`w-full grid grid-cols-1 md:grid-cols-2 py-[78px] lg:grid-cols-4`,
+  tw`w-full grid gap-y-[80px] grid-cols-1 md:grid-cols-2 py-[78px] lg:grid-cols-4`,
 ]);
 
 const mediaHeader = styled.div(() => [

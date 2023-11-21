@@ -18,9 +18,6 @@ import { recoletasemiboldLocalFont } from "@/app/fonts";
 const index = () => {
   return (
     <Root>
-
-      {/* <div className="get-involved-hero bg-green-400 h-[100vh]"></div> */}
-
       <MediaSection>
         <div className="media-text w-full h-[15%]   md:pl-[75px] flex md:justify-normal justify-center items-center">
           <div className="media-text-card w-[85%] lg:w-[50%] h-[80%] lg:h-[80%] md:h-[50%]  flex flex-col justify-center items-center md:items-start">

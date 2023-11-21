@@ -86,7 +86,7 @@ const Media = () => {
 
 const Root = styled.div(() => [tw``]);
 const MediaGrid = styled.div(() => [
-  tw`w-full grid grid-cols-1 md:grid-cols-2 md:px-8 lg:grid-cols-3 lg:gap-12`,
+  tw`w-full grid gap-y-[67px] grid-cols-1 md:grid-cols-2 md:px-8 lg:grid-cols-3 lg:gap-x-12`,
 ]);
 
 const MediaHeader = styled.div(() => [

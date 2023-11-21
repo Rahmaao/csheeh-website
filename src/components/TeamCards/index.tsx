@@ -8,20 +8,11 @@ interface MediaCardProps2 {
   image: StaticImport;
   mediaHeader: string;
   subheader: string;
-  rowVariant?: boolean;  
-  color: string;
 }
 
-const MediaCard1 = ({
-  color,  
-  image,
-  mediaHeader,
-  subheader,
-}: MediaCardProps2) => {
+const MediaCard1 = ({ image, mediaHeader, subheader }: MediaCardProps2) => {
   return (
-    <Root
-    color={color}       
-    className={`${recoletaLocalFont.className}`}>
+    <Root>
       <ImgContainer1>
         <Image
           src={image}
@@ -32,20 +23,21 @@ const MediaCard1 = ({
         />
       </ImgContainer1>
       <MediaTextContainer>
-        <MediaHeader1>{mediaHeader}</MediaHeader1>
+        <MediaHeader1 className={`${recoletaLocalFont.className}`}>
+          {mediaHeader}
+        </MediaHeader1>
         <MediaSubheader>{subheader}</MediaSubheader>
       </MediaTextContainer>
     </Root>
   );
 };
 
-
 const Root = styled.a(() => [
-  tw`h-[397px] w-[full] flex flex-col items-center`,
+  tw`w-[full] flex flex-col items-center text-white`,
 ]);
 
 const ImgContainer1 = styled.div(() => [
-  tw`w-[190px] h-[190px] rounded-full p-2 flex justify-center items-center mb-[25px] border border-[#058A51]`,
+  tw`w-[190px] h-[190px] rounded-full p-2 flex justify-center items-center mb-[25px] border border-[#ffffff]`,
 ]);
 
 const MediaTextContainer = styled.div(() => [
@@ -53,11 +45,11 @@ const MediaTextContainer = styled.div(() => [
 ]);
 
 const MediaHeader1 = styled.h3(() => [
-  tw`text-[14px] lg:text-[16px] leading-[24px] text-center font-bold`,
+  tw`text-[14px] lg:text-[16px] leading-[24px] text-center`,
 ]);
 
 const MediaSubheader = styled.p(() => [
-  tw`text-[#058A51] leading-[19.07px] text-[12px] lg:text-[14px] text-center font-light`,
+  tw`leading-[19.07px] text-[12px] lg:text-[14px] text-center font-extralight`,
 ]);
 
 export default MediaCard1;
