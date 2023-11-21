@@ -30,7 +30,7 @@ const Curve = styled.div(() => [
 ]);
 
 const Svg = styled.svg(() => [
-  tw`relative block w-[calc(137% + 1.3px)] h-[60px] md:h-[120px] transform`,
+  tw`relative block w-[calc(137% + 1.3px)] h-[40px] md:h-[120px] transform`,
 ]);
 
 const Path = styled.path<{ $fillColor: string }>(({ $fillColor }) => [
