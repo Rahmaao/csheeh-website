@@ -15,20 +15,20 @@ import Logo from "@/components/Logo";
 const index = () => {
   return (
     <Root className={nunitoFont.className}>
-      <div className="main-footer grid md:grid-cols-2 pt-7 md:pt-0">
-        <div className=" card footer-section1 flex justify-center h-full">
-          <div className="pb-6 md:pb-0 footer-content1 flex flex-col justify-around">
-            <div className="footer-logo w-[50%] h-[33%] pb-3 md:pb-0">
+      <div className="main-footer h-[90%] md:h-[80%] grid md:grid-cols-2 pt-7 md:pt-0">
+        <div className="card footer-section1 flex justify-center h-full">
+          <div className="pb-6 md:pb-0 footer-content1 w-[90%] md:w-[80%] flex flex-col justify-around">
+            <div className="footer-logo w-[70%] md:w-[50%] h-[40%] md:h-[33%] md:mt-[8px] md:mb-[15px]">
               <Logo />
             </div>
             <div className="footer-component2 flex">
-              <div className="icon-img">
-                <div className="img-icon">
+              <div className="icon-img w-[8%] md:w-[5%] pt-[4px] md:pt-[2px]">
+                <div className="img-icon w-[100%] md:w-[60%] h-[15px] md:h-[13px]">
                   <Image src={Location} alt="Location" className="icon-1" />
                 </div>
               </div>
               <div className="text-content w-[95%] lg:w-[430px]">
-                <p className="text2 text-[10px] lg:text-[14px] lg:text-xs">
+                <p className="text2 text-xs pl-2 md:pl-0">
                     Centre for School Health Education and Environmental Hygiene (CSHEEH) 
                     Sentosa Park, Near Fire Service, Zone A 1st Gate,
                     Legislative Quarters, Apo, Abuja. 
@@ -36,25 +36,25 @@ const index = () => {
               </div>
             </div>
             <div className="footer-component3 flex">
-              <div className="icon-img">
-                <div className="img-icon">
+              <div className="icon-img w-[8%] md:w-[5%] pt-[4px] md:pt-[2px]">
+                <div className="img-icon w-[100%] md:w-[60%] h-[15px] md:h-[13px]">
                   <Image src={Message} alt="Message" className="icon-1" />
                 </div>
               </div>
               <div className="text-content">
-                <p className="text3 text-[10px] lg:text-xs">
+                <p className="text3 text-xs pl-2 md:pl-0">
                   info@csheehnigeria.org
                 </p>
               </div>
             </div>
             <div className="footer-component4 flex">
-              <div className="icon-img">
-                <div className="img-icon">
+              <div className="icon-img w-[8%] md:w-[5%] pt-[4px] md:pt-[2px]">
+                <div className="img-icon w-[100%] md:w-[60%] h-[15px] md:h-[13px]">
                   <Image src={phone} alt="phone" className="icon-1" />
                 </div>
               </div>
               <div className="text-content">
-                <p className="text3 text-[10px] lg:text-xs">
+                <p className="text3 text-xs pl-2 md:pl-0">
                   +234 803 787 1487; +234 805 356 3370
                 </p>
               </div>
@@ -62,8 +62,8 @@ const index = () => {
           </div>
         </div>
         <div className="card footer-section2 flex justify-center items-center md:h-full">
-          <div className="w-[90%] h-[100%] pt-0 md:pt-[15px] flex flex-col items-center md:items-end justify-between">
-            <div className="w-full md:w-[80%] pb-2 md:pb-0 footer-component5 flex justify-between">
+          <div className="w-[90%] h-[100%] pt-0 md:pt-[15px] flex flex-col items-center md:items-end justify-evenly md:justify-between">
+            <div className="w-full md:w-[80%] h-[30%] md:h-[20%] pb-2 md:pb-0 footer-component5 flex items-start justify-between md:justify-between">
               <div className="footer-nav-items">
                 <a href="">ABOUT US</a>
               </div>
@@ -77,7 +77,7 @@ const index = () => {
                 <a href="">CONTACT US</a>
               </div>
             </div>
-            <div className="w-[70px] md:w-[20%] h-[20px] md:h-[35%] flex justify-between items-center">
+            <div className="w-[110px] md:w-[20%] h-[35px] md:h-[35%] flex justify-between items-center">
               <div className="logo-img1 w-[50%] md:w-[35%]">
                 <Image src={facebook} alt="facebook" className="icon-1" />
               </div>
@@ -90,8 +90,8 @@ const index = () => {
       </div>
 
       <Copyright className={nunitoFont.className}>
-        <hr className="h-[0.2px] w-[95%] mx-auto mt-3 border-0 bg-[#a3a3a343]" />
-        <p className="text-[7px] md:text-[10px] font-thin tracking-wide text-white">
+        <hr className="h-[0.5px] md:h-[0.2px] w-[95%] mx-auto mt-3 border-0 bg-[#a3a3a343]" />
+        <p className="text-[10px] font-thin tracking-wide text-white">
           Copyright © CSHEEH 2023. All rights reserved.
         </p>
       </Copyright>
@@ -102,11 +102,11 @@ const index = () => {
 export default index;
 
 const Root = styled.div(() => [
-  tw`w-full h-[20em] flex flex-col bg-[#030426]`,
+  tw`w-full h-[40em] md:h-[20em] flex flex-col bg-[#030426]`,
   css`footer-div`,
 ]);
 
 const Copyright = styled.div(() => [
-  tw`flex flex-col justify-evenly items-center w-full h-[20%] text-gray`,
+  tw`flex flex-col justify-evenly items-center w-full h-[10%] text-gray`,
   css``,
 ]);
