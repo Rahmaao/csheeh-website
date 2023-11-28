@@ -23,6 +23,7 @@ const index = () => {
                 </label>
                 <input
                   type="text"
+                  id="senderName"
                   className="shadow-sm bg-gray-50 border-[0.3px] border-[#C4C4C4] text-gray-900 text-sm focus:ring-1 ring-lightgreen outline-none rounded-lg w-full p-2.5 bg-[#ffff]"
                   required
                 />
@@ -35,6 +36,7 @@ const index = () => {
                   </label>
                   <input
                     type="email"
+                    id="emailAddress"
                     className="shadow-sm bg-gray-50 border-[0.3px] border-[#C4C4C4] text-gray-900 text-sm focus:ring-1 ring-lightgreen outline-none rounded-lg w-full p-2.5 bg-[#ffff]"
                     required
                   ></input>
@@ -66,7 +68,10 @@ const index = () => {
                 <label className="block mb-2 text-sm font-medium text-[#333333]">
                   Message <span className="required-fields text-[red]">*</span>
                 </label>
-                <textarea className="block p-2.5 w-full h-40 text-sm text-gray-900 rounded-lg shadow-sm border-[0.3px] focus:ring-1 ring-lightgreen outline-none border-[#C4C4C4] bg-[#ffff]"></textarea>
+                <textarea
+                  id="message"
+                  className="block p-2.5 w-full h-40 text-sm text-gray-900 rounded-lg shadow-sm border-[0.3px] focus:ring-1 ring-lightgreen outline-none border-[#C4C4C4] bg-[#ffff]"
+                ></textarea>
               </div>
               <div className="flex justify-center md:justify-end">
                 <SmallButton>Submit</SmallButton>
@@ -157,5 +162,5 @@ const Card = styled.div(() => [
 ]);
 
 const ContactSection = styled.div(() => [
-  tw`flex flex-col justify-center items-center`
+  tw`flex flex-col justify-center items-center`,
 ]);

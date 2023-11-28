@@ -76,7 +76,7 @@ const LayoutHeader = () => {
               </Link>
             ))}
           </NavigationItems>
-          <Button>
+          <Button href="/donate">
             <ButtonImage src={HeartIcon} alt="heart" />
             Donate Now
           </Button>
@@ -147,7 +147,7 @@ const LayoutHeader = () => {
           ))}
         </SiebarNavItems>
 
-        <Button>
+        <Button href="/donate">
           <ButtonImage src={HeartIcon} alt="heart" />
           Donate Now
         </Button>

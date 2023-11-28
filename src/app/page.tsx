@@ -49,7 +49,7 @@ export default function Home() {
             </HeroHeader>
           </Header>
 
-          <Button>
+          <Button href="/get-involved">
             Get Involved
             <Image
               src={BlackArrowRight}
@@ -229,7 +229,7 @@ export default function Home() {
               every child thrives in a safe and nurturing environment, promoting
               health, safety, and education for all.
             </DonationContentBody>
-            <Button>
+            <Button href="/donate">
               <ButtonImage src={HeartIcon} alt="heart-icon" />
               Donate Now
             </Button>
