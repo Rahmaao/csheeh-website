@@ -3,7 +3,7 @@ import Location1 from "@/assets/icons/Location1.svg";
 import Messaging from "@/assets/icons/Messaging.svg";
 import FB from "@/assets/icons/FB.svg";
 import IG from "@/assets/icons/IG.svg";
-import phone1 from "@/assets/icons/phone1.svg";
+import phone1 from "@/assets/icons/Phone1.svg";
 import SectionTag from "@/components/SectionTag/index";
 import Image from "next/image";
 import tw, { css, styled } from "twin.macro";
