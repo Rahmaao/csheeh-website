@@ -253,7 +253,7 @@ const AboutContentContainerRight = styled.div(() => [
 ]);
 
 const AboutContentBanner = styled.div(() => [
-  tw`w-full lg:w-1/2 flex flex-col min-h-[86px]`,
+  tw`w-full lg:w-1/2 flex flex-col min-h-[86px] lg:h-[200px]`,
 ]);
 
 const AboutContentBannerHeader = styled.h3(() => [

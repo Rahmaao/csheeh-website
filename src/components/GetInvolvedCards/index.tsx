@@ -73,13 +73,9 @@ const index = () => {
               </div>
               <div className="get-involved-text2 pt-3 md:pt-0 text-[11px] lg:text-[15px] w-full md:w-[100%] h-fit md:h-fit md:text-left text-center">
                 <Text>
-                  Are you interested in volunteering with CSHEEH? You can
-                  forward an application to our email address{" "}
-                  <span className="get-involved-mail">
-                    volunteer@csheehnigeria.org
-                  </span>{" "}
-                  or fill our volunteer application form using the button below.
-                  We look forward to hearing from you.
+                  Are you interested in volunteering with CSHEEH? Fill our
+                  volunteer application form using the button below. We look
+                  forward to hearing from you.
                 </Text>
               </div>
               <div className="get-involved-btn pt-4 lg:pt-0 w-[45%] md:w-[30%] md:h-[20%] h-[72px] flex md:justify-start justify-center items-end md:items-center">

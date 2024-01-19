@@ -92,7 +92,7 @@ const index = () => {
 
       <Copyright className={nunitoFont.className}>
         <p className="text-[10px] font-thin tracking-wide text-white">
-          Copyright © CSHEEH 2023. All rights reserved.
+          Copyright © CSHEEH 2024. All rights reserved.
         </p>
       </Copyright>
     </Root>
