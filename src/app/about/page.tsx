@@ -22,11 +22,15 @@ import team8 from "@/assets/images/Team8.png";
 import GridItem from "@/components/GridItem";
 import PageHero from "@/components/PageHero";
 import SectionTag from "@/components/SectionTag";
-import SubHeader from "@/components/Typography/SubHeader";
-import Text from "@/components/Typography/Text";
+import SubHeader from "@/components/typography/SubHeader";
+import Text from "@/components/typography/Text";
 import Image from "next/image";
 import tw, { styled } from "twin.macro";
-import { nunitoFont, recoletaLocalFont, recoletasemiboldLocalFont } from "../fonts";
+import {
+  nunitoFont,
+  recoletaLocalFont,
+  recoletasemiboldLocalFont,
+} from "../fonts";
 import Curve from "@/components/Curve";
 
 export default function Home() {
@@ -39,7 +43,9 @@ export default function Home() {
       />
       <AboutContentContainer className="mt-[67px]">
         <AboutContentContainerLeft>
-          <SubHeader>Healthy Schools, <br /> Safe Environment! 🌍</SubHeader>
+          <SubHeader>
+            Healthy Schools, <br /> Safe Environment! 🌍
+          </SubHeader>
         </AboutContentContainerLeft>
         <AboutContentContainerRight>
           <Text>
@@ -217,7 +223,6 @@ export default function Home() {
             image={avatar}
             subheader="Technical Adviser"
           />
-          
         </MediaGrid>
         <Curve fillColor="#030426" />
       </Team>

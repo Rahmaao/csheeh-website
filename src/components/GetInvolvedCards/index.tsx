@@ -5,7 +5,7 @@ import Partners from "@/assets/images/Partners.png";
 import Volunteer from "@/assets/images/Volunteer.png";
 import tw, { css, styled } from "twin.macro";
 import SmallButton from "../SmallButton";
-import Text from "../Typography/Text";
+import Text from "../typography/Text";
 import { recoletaboldLocalFont } from "@/app/fonts";
 import HeartIcon from "@/assets/icons/Heart.svg";
 import ButtonImage from "@/components/Button/ButtonImage";

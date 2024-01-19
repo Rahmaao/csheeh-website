@@ -1,11 +1,20 @@
 import React from "react";
 import tw, { styled } from "twin.macro";
 import { Nunito } from "next/font/google";
+import Link from "next/link";
 
+interface IButtonProps {
+  children: React.ReactNode;
+  href: string;
+}
 const nunitoFont = Nunito({ subsets: ["latin"] });
 
-const Button = ({ children }: { children: React.ReactNode }) => {
-  return <Root type="button">{children}</Root>;
+const Button = ({ children, href }: IButtonProps) => {
+  return (
+    <Link href={href}>
+      <Root type="button"> {children}</Root>
+    </Link>
+  );
 };
 
 export default Button;

@@ -3,7 +3,7 @@ import Location1 from "@/assets/icons/Location1.svg";
 import Messaging from "@/assets/icons/Messaging.svg";
 import FB from "@/assets/icons/FB.svg";
 import IG from "@/assets/icons/IG.svg";
-import phone1 from "@/assets/icons/phone1.svg";
+import phone1 from "@/assets/icons/Phone1.svg";
 import SectionTag from "@/components/SectionTag/index";
 import Image from "next/image";
 import tw, { css, styled } from "twin.macro";
@@ -23,6 +23,7 @@ const index = () => {
                 </label>
                 <input
                   type="text"
+                  id="senderName"
                   className="shadow-sm bg-gray-50 border-[0.3px] border-[#C4C4C4] text-gray-900 text-sm focus:ring-1 ring-lightgreen outline-none rounded-lg w-full p-2.5 bg-[#ffff]"
                   required
                 />
@@ -35,6 +36,7 @@ const index = () => {
                   </label>
                   <input
                     type="email"
+                    id="emailAddress"
                     className="shadow-sm bg-gray-50 border-[0.3px] border-[#C4C4C4] text-gray-900 text-sm focus:ring-1 ring-lightgreen outline-none rounded-lg w-full p-2.5 bg-[#ffff]"
                     required
                   ></input>
@@ -66,7 +68,10 @@ const index = () => {
                 <label className="block mb-2 text-sm font-medium text-[#333333]">
                   Message <span className="required-fields text-[red]">*</span>
                 </label>
-                <textarea className="block p-2.5 w-full h-40 text-sm text-gray-900 rounded-lg shadow-sm border-[0.3px] focus:ring-1 ring-lightgreen outline-none border-[#C4C4C4] bg-[#ffff]"></textarea>
+                <textarea
+                  id="message"
+                  className="block p-2.5 w-full h-40 text-sm text-gray-900 rounded-lg shadow-sm border-[0.3px] focus:ring-1 ring-lightgreen outline-none border-[#C4C4C4] bg-[#ffff]"
+                ></textarea>
               </div>
               <div className="flex justify-center md:justify-end">
                 <SmallButton>Submit</SmallButton>

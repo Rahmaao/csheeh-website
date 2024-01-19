@@ -11,6 +11,7 @@ import { nunitoFont } from "@/app/fonts";
 import { openSansFont } from "@/app/fonts";
 import tw, { styled, css } from "twin.macro";
 import Logo from "@/components/Logo";
+import Link from "next/link";
 
 const index = () => {
   return (
@@ -19,7 +20,9 @@ const index = () => {
         <div className="card footer-section1 flex justify-center h-full">
           <div className="pb-6 md:pb-0 footer-content1 w-[90%] md:w-[80%] flex flex-col justify-around">
             <div className="footer-logo w-[70%] md:w-[50%] h-[40%] md:h-[33%] md:mt-[8px] md:mb-[15px]">
-              <Logo />
+              <Link href="/">
+                <Logo />
+              </Link>
             </div>
             <div className="footer-component2 flex">
               <div className="icon-img w-[8%] md:w-[5%] pt-[4px] md:pt-[2px]">
@@ -63,16 +66,16 @@ const index = () => {
           <div className="w-[90%] h-[100%] pt-0 md:pt-[15px] flex flex-col items-center md:items-end justify-evenly md:justify-between">
             <div className="w-full md:w-[80%] h-[30%] md:h-[20%] pb-2 md:pb-0 footer-component5 flex items-start justify-between md:justify-between">
               <div className="footer-nav-items">
-                <a href="">ABOUT US</a>
+                <Link href="/about">ABOUT US</Link>
               </div>
               <div className="footer-nav-items">
-                <a href="">GET INVOLVED</a>
+                <Link href="/get-involved">GET INVOLVED</Link>
               </div>
               <div className="footer-nav-items">
-                <a href="">MEDIA</a>
+                <Link href="/media">MEDIA</Link>
               </div>
               <div className="footer-nav-items">
-                <a href="">CONTACT US</a>
+                <Link href="/contact">CONTACT US</Link>
               </div>
             </div>
             <div className="w-[110px] md:w-[20%] h-[35px] md:h-[35%] flex justify-between items-center">
@@ -88,7 +91,6 @@ const index = () => {
       </div>
 
       <Copyright className={nunitoFont.className}>
-        <hr className="h-[0.5px] md:h-[0.2px] w-[95%] mx-auto mt-3 border-0 bg-[#a3a3a343]" />
         <p className="text-[10px] font-thin tracking-wide text-white">
           Copyright © CSHEEH 2023. All rights reserved.
         </p>
@@ -100,11 +102,11 @@ const index = () => {
 export default index;
 
 const Root = styled.div(() => [
-  tw`w-full h-[40em] md:h-[20em] flex flex-col bg-[#030426]`,
+  tw`w-full h-[40em] md:h-[20em] flex flex-col bg-[#030426] justify-between`,
   css`footer-div`,
 ]);
 
 const Copyright = styled.div(() => [
-  tw`flex flex-col justify-evenly items-center w-full h-[10%] text-gray`,
+  tw`flex flex-col justify-evenly items-center w-full h-[10%] text-gray border-t-1 border-[#a3a3a343]`,
   css``,
 ]);

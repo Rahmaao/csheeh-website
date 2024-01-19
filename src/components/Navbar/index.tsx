@@ -28,7 +28,7 @@ const Index = () => {
             About
           </Link>
         </NavItems>
-        <Button>
+        <Button href="/donate">
           <ButtonImage src={HeartIcon} alt="heart" />
           Donate Now
         </Button>
