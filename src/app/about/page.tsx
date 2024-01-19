@@ -19,6 +19,10 @@ import team5 from "@/assets/images/Team5.png";
 import team6 from "@/assets/images/Team6.png";
 import team7 from "@/assets/images/Team7.png";
 import team8 from "@/assets/images/Team8.png";
+import OlubunmiAdeyemiImg from "@/assets/images/olubuunmi-adeyemi.png";
+import BenEnweremImg from "@/assets/images/ben-enwerem.png";
+import AdebayoAdeyemiImg from "@/assets/images/adebayo-adeyemi.png";
+import KuluLabaranImg from "@/assets/images/kulu-labaran.png";
 import GridItem from "@/components/GridItem";
 import PageHero from "@/components/PageHero";
 import SectionTag from "@/components/SectionTag";
@@ -185,12 +189,12 @@ export default function Home() {
           />
           <MediaCard1
             mediaHeader="Dr. Olubunmi Adeyemi"
-            image={avatar}
+            image={OlubunmiAdeyemiImg}
             subheader="Board Member"
           />
           <MediaCard1
             mediaHeader="Mr. Ben Enwerem"
-            image={avatar}
+            image={BenEnweremImg}
             subheader="Board Member"
           />
           <MediaCard1
@@ -210,7 +214,7 @@ export default function Home() {
           />
           <MediaCard1
             mediaHeader="Dr. Adedayo Adeyemi"
-            image={avatar}
+            image={AdebayoAdeyemiImg}
             subheader="Technical Adviser"
           />
           <MediaCard1
@@ -220,7 +224,7 @@ export default function Home() {
           />
           <MediaCard1
             mediaHeader="Mrs. Kulu Labaran"
-            image={avatar}
+            image={KuluLabaranImg}
             subheader="Technical Adviser"
           />
         </MediaGrid>
