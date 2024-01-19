@@ -29,9 +29,9 @@ const index = () => {
               </div>
               <div className="text-content w-[95%] lg:w-[430px]">
                 <p className="text2 text-xs pl-2 md:pl-0">
-                    Centre for School Health Education and Environmental Hygiene (CSHEEH) 
-                    Sentosa Park, Near Fire Service, Zone A 1st Gate,
-                    Legislative Quarters, Apo, Abuja. 
+                  Centre for School Health Education and Environmental Hygiene
+                  (CSHEEH) Sentosa Park, Near Fire Service, Zone A 1st Gate,
+                  Legislative Quarters, Apo, Abuja.
                 </p>
               </div>
             </div>
@@ -42,9 +42,7 @@ const index = () => {
                 </div>
               </div>
               <div className="text-content">
-                <p className="text3 text-xs pl-2 md:pl-0">
-                  info@csheehnigeria.org
-                </p>
+                <p className="text3 text-xs pl-2 md:pl-0">info@csheeh.org</p>
               </div>
             </div>
             <div className="footer-component4 flex">

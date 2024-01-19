@@ -24,14 +24,16 @@ const index = () => {
               </GetInvolvedText1>
             </div>
             <div className="get-involved-text2 pt-3 md:pt-0 text-[11px] lg:text-[15px] w-full md:w-[87%] h-fit md:h-fit md:text-left text-center">
-              <Text>Every donation, no matter the size, plays a crucial role in
+              <Text>
+                Every donation, no matter the size, plays a crucial role in
                 helping us achieve these goals. With your support, we can
                 provide children with healthier and more inspiring places to
                 learn, ensure the safety of our communities, and empower
                 individuals to thrive. By contributing to our cause, you're not
                 just donating; you're investing in a brighter future. Join us in
                 this meaningful journey of transformation, and together, we can
-                build a healthier, safer, and more vibrant world for all.</Text>
+                build a healthier, safer, and more vibrant world for all.
+              </Text>
             </div>
             <div className="get-involved-btn py-4 md:py-0 w-[45%] md:w-[30%] md:h-[20%] h-[24%] flex md:justify-start justify-center items-end md:items-center">
               <SmallButton>
@@ -52,39 +54,39 @@ const index = () => {
         </Card>
       </GetInvolvedSection>
       <GetInvolvedSection className="pt-16">
-      <Card>
-        <div className="w-[100%] h-[480px] md:h-[50%] lg:h-[70%] flex md:flex-row md:justify-between flex-col justify-center items-center">
-          <div className="get-involved-img h-[204.2px] w-[80%] md:w-[40%] md:h-full flex justify-center items-end md:items-center ">
-            <GetInvolvedImage>
-              <Image
-                className=" w-[93%] h-[93%] rounded-full"
-                src={Volunteer}
-                alt="Location"
-              />
-            </GetInvolvedImage>
+        <Card>
+          <div className="w-[100%] h-[480px] md:h-[50%] lg:h-[70%] flex md:flex-row md:justify-between flex-col justify-center items-center">
+            <div className="get-involved-img h-[204.2px] w-[80%] md:w-[40%] md:h-full flex justify-center items-end md:items-center ">
+              <GetInvolvedImage>
+                <Image
+                  className=" w-[93%] h-[93%] rounded-full"
+                  src={Volunteer}
+                  alt="Location"
+                />
+              </GetInvolvedImage>
+            </div>
+            <div className="get-involved-text flex flex-col md:justify-evenly md:items-start items-center w-[100%] h-[45%] md:w-[50%] md:h-[80%]">
+              <div className="get-involved-text1 w-[70%] md:w-[50%] h-[36.75px] md:h-[20%] flex items-center md:items-end md:justify-start justify-center">
+                <GetInvolvedText1 className={recoletaboldLocalFont.className}>
+                  Volunteer with us
+                </GetInvolvedText1>
+              </div>
+              <div className="get-involved-text2 pt-3 md:pt-0 text-[11px] lg:text-[15px] w-full md:w-[100%] h-fit md:h-fit md:text-left text-center">
+                <Text>
+                  Are you interested in volunteering with CSHEEH? You can
+                  forward an application to our email address{" "}
+                  <span className="get-involved-mail">
+                    volunteer@csheehnigeria.org
+                  </span>{" "}
+                  or fill our volunteer application form using the button below.
+                  We look forward to hearing from you.
+                </Text>
+              </div>
+              <div className="get-involved-btn pt-4 lg:pt-0 w-[45%] md:w-[30%] md:h-[20%] h-[72px] flex md:justify-start justify-center items-end md:items-center">
+                <SmallButton>Apply Now</SmallButton>
+              </div>
+            </div>
           </div>
-          <div className="get-involved-text flex flex-col md:justify-evenly md:items-start items-center w-[100%] h-[45%] md:w-[50%] md:h-[80%]">
-            <div className="get-involved-text1 w-[70%] md:w-[50%] h-[36.75px] md:h-[20%] flex items-center md:items-end md:justify-start justify-center">
-              <GetInvolvedText1 className={recoletaboldLocalFont.className}>
-                Volunteer with us
-              </GetInvolvedText1>
-            </div>
-            <div className="get-involved-text2 pt-3 md:pt-0 text-[11px] lg:text-[15px] w-full md:w-[100%] h-fit md:h-fit md:text-left text-center">
-              <Text>
-              Are you interested in volunteering with CSHEEH? You can forward
-                an application to our email address{" "}
-                <span className="get-involved-mail">
-                  volunteer@csheehnigeria.org
-                </span>{" "}
-                or fill our volunteer application form using the button below.
-                We look forward to hearing from you.
-              </Text>
-            </div>
-            <div className="get-involved-btn pt-4 lg:pt-0 w-[45%] md:w-[30%] md:h-[20%] h-[72px] flex md:justify-start justify-center items-end md:items-center">
-              <SmallButton>Apply Now</SmallButton>
-            </div>
-          </div>
-        </div>
         </Card>
       </GetInvolvedSection>
       <GetInvolvedSection className="pt-8 relative pb-[60px] lg:pb-[120px]">
@@ -97,13 +99,11 @@ const index = () => {
             </div>
             <div className="get-involved-text2 pt-3 md:pt-0 text-[11px] lg:text-[15px] w-full md:w-[87%] h-fit md:h-fit md:text-left text-center">
               <Text>
-              Individuals and organizations that desire to partner with CSHEEH
+                Individuals and organizations that desire to partner with CSHEEH
                 may forward their proposals to our official email address{" "}
-                <span className="get-involved-mail">
-                  info@csheehnigeria.org
-                </span>{" "}
-                or fill our contact form. We also welcome donations and grants
-                from individuals and organizations. All donations are channeled
+                <span className="get-involved-mail">info@csheeh.org</span> or
+                fill our contact form. We also welcome donations and grants from
+                individuals and organizations. All donations are channeled
                 strictly towards the realization of the organization’s
                 objectives and account will be given where necessary.
               </Text>

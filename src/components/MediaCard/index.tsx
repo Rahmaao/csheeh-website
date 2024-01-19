@@ -53,7 +53,7 @@ const MediaHeader = styled.h3(() => [
 ]);
 
 const MediaDate = styled.p(() => [
-  tw`text-[#058A51] leading-[19.07px] text-[12px] lg:text-[14px] text-center font-bold`,
+  tw`text-[#058A51] leading-[19.07px] mb-10 text-[12px] lg:text-[14px] text-center font-bold`,
 ]);
 
 export default MediaCard;

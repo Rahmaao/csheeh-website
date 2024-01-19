@@ -88,7 +88,7 @@ const index = () => {
                 </div>
               </div>
               <div className="flex items-start pt-1">
-                <p className="text2 text-[#ffff] text-[10px] md:text-[10px] lg:text-[15px] leading-6">
+                <p className="text2 text-[#ffff] text-[12px] md:text-[10px] lg:text-[15px] leading-6">
                   <span className=" md:block">
                     Centre for School Health Education and Environmental Hygiene{" "}
                   </span>
@@ -114,8 +114,8 @@ const index = () => {
                   </div>
                 </div>
                 <div className="text-content">
-                  <p className="text3 text-[10px] text-[#ffff] md:text-[10px] lg:text-[15px] pl-1">
-                    info@csheehnigeria.org
+                  <p className="text3 text-[12px] text-[#ffff] md:text-[10px] lg:text-[15px] pl-1">
+                    info@csheeh.org
                   </p>
                 </div>
               </div>
@@ -126,7 +126,7 @@ const index = () => {
                   </div>
                 </div>
                 <div className="text-content">
-                  <p className="text3 text-[10px] text-[#ffff] md:text-[10px] lg:text-[15px] pl-1">
+                  <p className="text3 text-[12px] text-[#ffff] md:text-[10px] lg:text-[15px] pl-1">
                     +234 803 787 1487; +234 805 356 3370
                   </p>
                 </div>
@@ -157,5 +157,5 @@ const Card = styled.div(() => [
 ]);
 
 const ContactSection = styled.div(() => [
-  tw`flex flex-col justify-center items-center`
+  tw`flex flex-col justify-center items-center`,
 ]);
