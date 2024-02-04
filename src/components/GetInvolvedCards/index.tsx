@@ -29,10 +29,11 @@ const index = () => {
                 helping us achieve these goals. With your support, we can
                 provide children with healthier and more inspiring places to
                 learn, ensure the safety of our communities, and empower
-                individuals to thrive. By contributing to our cause, you're not
-                just donating; you're investing in a brighter future. Join us in
-                this meaningful journey of transformation, and together, we can
-                build a healthier, safer, and more vibrant world for all.
+                individuals to thrive. By contributing to our cause, you&apos;re
+                not just donating; you&apos;re investing in a brighter future.
+                Join us in this meaningful journey of transformation, and
+                together, we can build a healthier, safer, and more vibrant
+                world for all.
               </Text>
             </div>
             <div className="get-involved-btn py-4 md:py-0 w-[45%] md:w-[30%] md:h-[20%] h-[24%] flex md:justify-start justify-center items-end md:items-center">
