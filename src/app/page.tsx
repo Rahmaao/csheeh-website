@@ -14,6 +14,7 @@ import handwashing from "@/assets/images/handwashing.png";
 import taps from "@/assets/images/taps.png";
 import pads from "@/assets/images/pads.png";
 import HeroBg from "@/assets/images/hero-bg.png";
+import HeroMobileBg from "@/assets/images/hero-mobile.png";
 import WhatWeDoImage from "@/assets/images/what-we-do.png";
 import Button from "@/components/Button";
 import ButtonImage from "@/components/Button/ButtonImage";
@@ -28,16 +29,20 @@ import Image from "next/image";
 import Link from "next/link";
 import tw, { styled } from "twin.macro";
 import { nunitoFont, recoletaLocalFont } from "./fonts";
+import { CSSProperties } from "styled-components";
 
 export default function Home() {
   return (
     <Root>
       <Hero
-        style={{
-          backgroundImage: `url(${HeroBg.src})`,
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-        }}
+        style={
+          {
+            "--image-url": `url(${HeroBg.src})`,
+            "--mobile-image": `url(${HeroMobileBg.src})`,
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+          } as CSSProperties
+        }
         className="relative"
       >
         <HeroContent>
@@ -245,7 +250,7 @@ const Root = styled.main(() => [
   tw`flex flex-col justify-center items-center gap-[80px] lg:gap-[10px]`,
 ]);
 const Hero = styled.div(() => [
-  tw`text-center flex items-center justify-center min-h-[100vh] w-full `,
+  tw`text-center flex items-center bg-[image:var(--mobile-image)] md:bg-[image:var(--image-url)] justify-center min-h-[100vh] w-full `,
 ]);
 
 const HeroContent = styled.div(() => [

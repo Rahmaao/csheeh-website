@@ -8,6 +8,7 @@ import MediaCard1 from "@/components/TeamCards";
 import PromotingIcon from "@/assets/icons/promoting.svg";
 import ReserachIcon from "@/assets/icons/research.svg";
 import AboutUsImg from "@/assets/images/about-us.png";
+import AboutUsMobileImg from "@/assets/images/about-us-mobile.png";
 import MissionImg from "@/assets/images/get-involved.png";
 import tapsImg from "@/assets/images/taps.png";
 import avatar from "@/assets/images/Avatar.png";
@@ -44,6 +45,7 @@ export default function Home() {
         header="About Us"
         subHeader="Learn more about our mission and values, and meet the people that drive us forward."
         image={AboutUsImg}
+        mobileImage={AboutUsMobileImg}
       />
       <AboutContentContainer className="mt-[67px]">
         <AboutContentContainerLeft>

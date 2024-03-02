@@ -1,8 +1,8 @@
 "use client";
 
 import MediaImg from "@/assets/images/media-page.png";
+import MediaMobileHeroImg from "@/assets/images/media-mobile.png";
 import MediaCard from "@/components/MediaCard";
-import MediaCards from "@/components/MediaCards";
 import tapsImg from "@/assets/images/taps.png";
 import handwashing from "@/assets/images/handwashing.png";
 import pads from "@/assets/images/pads.png";
@@ -25,6 +25,7 @@ const Media = () => {
         header="Media"
         subHeader="View and read more of our work in some of our featured news articles."
         image={MediaImg}
+        mobileImage={MediaMobileHeroImg}
       />
       <MediaHeader id="news">
         <SubHeader>News, Press + Featured Articles</SubHeader>

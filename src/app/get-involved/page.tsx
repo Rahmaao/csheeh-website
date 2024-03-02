@@ -5,6 +5,7 @@ import GetInvolvedCards from "@/components/GetInvolvedCards";
 import tw, { styled } from "twin.macro";
 import PageHero from "@/components/PageHero";
 import GetInvolvedImg from "@/assets/images/get-involed-page.png";
+import GetInvolvedMobileImg from "@/assets/images/get-involved-mobile.png";
 
 const GetInvolved = () => {
   return (
@@ -13,6 +14,7 @@ const GetInvolved = () => {
         header="Get Involved"
         subHeader="Be a part of our journey towards a better future by donating, volunteering or partnering with us."
         image={GetInvolvedImg}
+        mobileImage={GetInvolvedMobileImg}
       />
       <GetInvolvedCards />
     </Root>

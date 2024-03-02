@@ -15,11 +15,12 @@ const config: Config = {
     //   currentColor: "currentColor",
     // },
     extend: {
-      // backgroundImage: {
-      //   "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-      //   "gradient-conic":
-      //     "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      // },
+      backgroundImage: {
+        about: "url('/assets/images/about-us.png')",
+        "about-mobile": "url('/assets/images/about-mobile.png')",
+        "gradient-conic":
+          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      },
       colors: {
         "dark-blue": "#3D3F94",
         lime: "#E6F3EE",
