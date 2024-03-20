@@ -37,10 +37,12 @@ const index = () => {
               </Text>
             </div>
             <div className="get-involved-btn py-4 md:py-0 w-[45%] md:w-[30%] md:h-[20%] h-[24%] flex md:justify-start justify-center items-end md:items-center">
-              <SmallButton>
-                <ButtonImage src={HeartIcon} alt="heart" />
-                Donate Now
-              </SmallButton>
+              <a href="https://paystack.com/pay/csheeh">
+                <SmallButton>
+                  <ButtonImage src={HeartIcon} alt="heart" />
+                  Donate Now
+                </SmallButton>
+              </a>
             </div>
           </div>
           <div className="get-involved-img h-[40%] w-[80%] md:w-[40%] md:h-full flex justify-center items-end md:items-center ">
@@ -80,7 +82,9 @@ const index = () => {
                 </Text>
               </div>
               <div className="get-involved-btn pt-4 lg:pt-0 w-[45%] md:w-[30%] md:h-[20%] h-[72px] flex md:justify-start justify-center items-end md:items-center">
-                <SmallButton>Apply Now</SmallButton>
+                <a href="https://x7wkhcx37bx.typeform.com/to/sJRo1EKX">
+                  <SmallButton>Apply Now</SmallButton>
+                </a>
               </div>
             </div>
           </div>

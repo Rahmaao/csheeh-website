@@ -76,7 +76,7 @@ const LayoutHeader = () => {
               </Link>
             ))}
           </NavigationItems>
-          <Button href="/donate">
+          <Button href="https://paystack.com/pay/csheeh">
             <ButtonImage src={HeartIcon} alt="heart" />
             Donate Now
           </Button>
@@ -147,7 +147,7 @@ const LayoutHeader = () => {
           ))}
         </SiebarNavItems>
 
-        <Button href="/donate">
+        <Button href="https://paystack.com/pay/csheeh">
           <ButtonImage src={HeartIcon} alt="heart" />
           Donate Now
         </Button>
