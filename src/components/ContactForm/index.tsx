@@ -9,14 +9,42 @@ import Image from "next/image";
 import tw, { css, styled } from "twin.macro";
 import SmallButton from "../SmallButton";
 import Curve from "@/components/Curve";
+import { useState } from "react";
 
 const index = () => {
+  const [name, setName] = useState("");
+  const [senderEmail, setSenderEmail] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [organizationName, setOrganizationName] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = (event: any) => {
+    event.preventDefault(); // Prevent default form submission behavior
+
+    console.log({ name, senderEmail, phoneNumber, organizationName, message });
+
+    const subject = `Mail from ${organizationName}`;
+    const mailMessage = `${message}\n\n${organizationName},\n${senderEmail},\n${phoneNumber}`;
+
+    const mailtoUrl = `mailto:info@csheeh.org?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(mailMessage)}`;
+
+    window.location.href = mailtoUrl;
+
+    setName("");
+    setSenderEmail("");
+    setPhoneNumber("");
+    setOrganizationName("");
+    setMessage("");
+  };
+
   return (
     <Root>
       <ContactSection>
         <Card>
           <div className="h-[100%] flex flex-col justify-center px-10 mx-auto max-w-screen-md">
-            <form action="#" className="space-y-6">
+            <form action="#" className="space-y-6" onSubmit={handleSubmit}>
               <div>
                 <label className="block mb-2 text-sm font-medium text-[#333333]">
                   Name <span className="required-fields text-[red]">*</span>
@@ -24,6 +52,9 @@ const index = () => {
                 <input
                   type="text"
                   id="senderName"
+                  name="senderName"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
                   className="shadow-sm bg-gray-50 border-[0.3px] border-[#C4C4C4] text-gray-900 text-sm focus:ring-1 ring-lightgreen outline-none rounded-lg w-full p-2.5 bg-[#ffff]"
                   required
                 />
@@ -37,6 +68,9 @@ const index = () => {
                   <input
                     type="email"
                     id="emailAddress"
+                    name="emailAddress"
+                    value={senderEmail}
+                    onChange={(e) => setSenderEmail(e.target.value)}
                     className="shadow-sm bg-gray-50 border-[0.3px] border-[#C4C4C4] text-gray-900 text-sm focus:ring-1 ring-lightgreen outline-none rounded-lg w-full p-2.5 bg-[#ffff]"
                     required
                   ></input>
@@ -49,6 +83,10 @@ const index = () => {
                   <input
                     type="tel"
                     className="shadow-sm bg-gray-50 border-[0.3px] border-[#C4C4C4] text-gray-900 text-sm focus:ring-1 ring-lightgreen outline-none rounded-lg w-full p-2.5 bg-[#ffff]"
+                    name="phoneNumber"
+                    id="phoneNumber"
+                    value={phoneNumber}
+                    onChange={(e) => setPhoneNumber(e.target.value)}
                     required
                   ></input>
                 </div>
@@ -60,8 +98,12 @@ const index = () => {
                 </label>
                 <input
                   type="text"
+                  name="organizationName"
+                  id="organizationName"
                   className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border-[0.3px] border-[#C4C4C4] focus:ring-1 ring-lightgreen outline-none shadow-sm bg-[#ffff]"
                   required
+                  value={organizationName}
+                  onChange={(e) => setOrganizationName(e.target.value)}
                 ></input>
               </div>
               <div className="sm:col-span-2">
@@ -70,6 +112,8 @@ const index = () => {
                 </label>
                 <textarea
                   id="message"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
                   className="block p-2.5 w-full h-40 text-sm text-gray-900 rounded-lg shadow-sm border-[0.3px] focus:ring-1 ring-lightgreen outline-none border-[#C4C4C4] bg-[#ffff]"
                 ></textarea>
               </div>
