@@ -11,7 +11,7 @@ import SmallButton from "../SmallButton";
 import Curve from "@/components/Curve";
 import { useState } from "react";
 
-const index = () => {
+const Index = () => {
   const [name, setName] = useState("");
   const [senderEmail, setSenderEmail] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
@@ -197,7 +197,7 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;
 
 const Root = styled.div(() => [tw`w-full`]);
 
